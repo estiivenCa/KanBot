@@ -1,4 +1,4 @@
-# `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗` 
+# `NEXUS-𝗕𝗢𝗧-𝗠𝗗` 
 <p align="center">
 <img src="https://telegra.ph/file/32b888e7ce494fcab307f.jpg" alt="BaileyBot-MD" width="900"/>
 </p>
