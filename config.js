@@ -32,7 +32,7 @@ import { watchFile, unwatchFile } from 'fs'
 
 global.packname = 'ᥫ᭡nexus bot-𝙈𝘿ꨄ'
 global.author = 'eder'
-global.wm = '𓆩𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃𓆪'
+global.wm = '𓆩Nexus bot-𝐌𝐃𓆪'
 global.wm2 = '✦nexus bot-𝗠𝗗✦'
 global.jxtxn = 'eder'
 global.cb = '⏤͟͟͞͞Nexus bot-ＭＤ'
