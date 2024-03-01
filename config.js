@@ -12,7 +12,7 @@ import { watchFile, unwatchFile } from 'fs'
  const __dirname = global.__dirname(import.meta.url) 
   
  global.owner =
-[['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽¹⁷🍧', true],
+[['573027866596', '🍧EDER⁷🍧', true],
 ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true],
 ['573106040746', '𝙴𝙳𝙴𝚁', true],
 ['5492215034412'],
