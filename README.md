@@ -9,11 +9,11 @@ Me Gustan Los Bots!/Programar🫣
 <br>
 
 
-- #### `⚡️ Clonar El Repositorio`
+- #### `⚙️ Clonar El Repositorio`
  Clonar NexusBot [Aqui](https://github.com/WOTCHITO/Nexus-bot/fork)
 
 
-- #### ⚡️ Instalacion Automatica Por Termux
+- #### 🧑🏻‍💻 Instalacion Automatica Por Termux
 ```bash
 termux-setup-storage
 ```
@@ -21,7 +21,7 @@ termux-setup-storage
 apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/WOTCHITO/Nexus-bot/master/nexus.sh | bash
 ```
 
-- #### ⚡️ Instalacion Manual Por Termux
+- #### 🧑🏻‍💻 Instalacion Manual Por Termux
 
 > Escribe Estos Comandos Uno Por Uno
 
@@ -52,7 +52,7 @@ npm update
 npm start
 ```
 
-- #### ⚡️ Activar En Caso De Detenerse En Termux
+- #### 👩🏼‍💻 Activar En Caso De Detenerse En Termux
 > Escribe Estos Comandos Uno Por Uno
 ```bash
 > cd
@@ -60,7 +60,7 @@ npm start
 > npm start
 ```
 
-- #### ⚡️ Obtener Otro Codigo Qr
+- #### 👩🏼‍💻 Obtener Otro Codigo Qr
 > 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙴𝚂𝚃𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚄𝙽𝙾 𝙿𝙾𝚁 𝚄𝙽𝙾:
 ```bash
 > cd Nexus-bot
