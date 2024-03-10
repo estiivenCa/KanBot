@@ -52,7 +52,7 @@ npm update
 npm start
 ```
 
-- #### 👩🏼‍💻 Activar En Caso De Detenerse En Termux
+- #### ⚡️ Activar En Caso De Detenerse En Termux
 > Escribe Estos Comandos Uno Por Uno
 ```bash
 > cd
@@ -60,7 +60,7 @@ npm start
 > npm start
 ```
 
-- #### 👩🏼‍💻 Obtener Otro Codigo Qr
+- #### ⚡️ Obtener Otro Codigo Qr
 > 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙴𝚂𝚃𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚄𝙽𝙾 𝙿𝙾𝚁 𝚄𝙽𝙾:
 ```bash
 > cd Nexus-bot
@@ -73,24 +73,8 @@ npm start
 
  <a href="https://wa.me/573013482814"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
-### EDITOR & PROPIETARIO DEL BOT
-<a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png" width="250" height="250" alt="Eder"/></a>
+### Editor & Propietario Del Bot 🥀
+[![WOTCHITO](https://github.com/WOTCHITO.png?size=100)](https://github.com/WOTCHITO)
 
-#### COLABORADORES 
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
- 
-  <td align="center"><a 
-  href="https://github.com/HACHEJOTA"><img src="https://github.com/HACHEJOTA.png?size=100" width="100px;" alt=""/><br /><sub><b>HACHEJOTA</b></sub></a><br /><sub><i>Desarollador Oficial</i></sub></td>
-    <td align="center"><a href="https://github.com/Ender-GB-Isis777"><img src="https://github.com/Ender-GB-Isis777.png?size=100" width="100px;" alt=""/><br /><sub><b>Ender GB</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
-       <td align="center"><a href="https://github.com/DanielDiod"><img src="https://github.com/DanielDiod.png?size=100" width="100px;" alt=""/><br /><sub><b>Daniel</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
-       <td align="center"><a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png?size=100" width="100px;" alt=""/><br /><sub><b>Eder</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
- <td align="center"><a href="https://github.com/AzamiJS"><img src="https://github.com/AzamiJS.png?size=100" width="100px;" alt=""/><br /><sub><b>Alexis</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
- <td align="center"><a href="https://github.com/diegojadibot"><img src="https://github.com/diegojadibot.png?size=100" width="100px;" alt=""/><br /><sub><b>Diego</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
+ ### Colaboradores Del Bot ⚡️
+[![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) [![diegojadibot](https://github.com/diegojadibot.png?size=100)](https://github.com/diegojadibot) [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21)
