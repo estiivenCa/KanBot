@@ -529,7 +529,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  if (cs.isGroup == false) { 
  if (cs.status == "offer") { 
  let callmsg = await this.reply(nk.from, `Hola *@${cs.from.split('@')[0]}*, Las ${cs.isVideo ? 'videollamadas' : 'llamadas'} están prohibidas, seras bloqueado`, false, { mentions: [cs.from] }) 
- let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Jxtxn 👑;;;\nFN:Eder\nORG:Jxtxn👑\nTITLE:\nitem1.TEL;waid=18134039996:+598 9999\nitem1.X-ABLabel:Jxtxn 👑\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Jxtxn 👑\nEND:VCARD` 
+ let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Eder 👑;;;\nFN:Eder\nORG:Eder👑\nTITLE:\nitem1.TEL;waid=18134039996:+598 9999\nitem1.X-ABLabel:Eder 👑\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Eder 👑\nEND:VCARD` 
  await this.sendMessage(cs.from, { contacts: { displayName: 'Eder 👑', contacts: [{ vcard }] }}, {quoted: callmsg}) 
  await this.updateBlockStatus(cs.from, 'block') 
  }}} 
