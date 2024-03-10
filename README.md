@@ -5,54 +5,8 @@
 
 
 
-## **Warning**
-> Se estan actualizando todos los archivos, muy pronto se subieran los nuevos archivos
-
-<a href="https://www.youtube.com/@Azami_19">
-<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
-</a>
-<a href="https://instagram.com/azami.19">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-</a>
-
-# `Características del bot`
-|  Funciones y comandos  |                                           Si |
-| :---------------------------------------------: | :-----------: |
-| Crea stickers|✓|
-| Bienvenida automática|✓|
-| Anti-Link|✓|
-| Anti-Fakes|✓|
-| Jadibot |✓|
-| Anti-Llamadas|✓|
-| Anti-Privados|✓|
-| Modo Publico/Privado|✓|
-| Juegos|✓|
-| Descarga de música/videos|✓|
-| ChatBot|✓|
-| Más funciones en adelante|⚡|
-
-### `⚙️ AJUSTES ⚙️`
-- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
-- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/package.json#L42)
-
-### Ejemplo 
-En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
-
-[![Grupos](https://img.shields.io/badge/BaileyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
-
-***
-
-#### `ACTIVA EN HEROKU`
-para usuarios del heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
-
-#### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+- #### `⚡️ Clonar El Repositorio`
+ Clonar NexusBot [Aqui](https://github.com/WOTCHITO/Nexus-bot/fork)
 
 <!-- Instalación-->
 <b><details><summary>🦉Instalación Termux</summary></b>  
@@ -119,7 +73,7 @@ npm start
 <a href="https://wa.me/51929972576"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### EDITOR & PROPIETARIO DEL BOT
-<a href="https://github.com/Jxtxn17 "><img src="https://github.com/Jxtxn17.png" width="250" height="250" alt="Jxtxn17"/></a>
+<a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png" width="250" height="250" alt="Eder"/></a>
 
 #### COLABORADORES 
 <!-- prettier-ignore-start -->
