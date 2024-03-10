@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: BaileyBot-MD
+    name: curiositybot-md
     env: docker
     region: Frankfurt
     plan: free
