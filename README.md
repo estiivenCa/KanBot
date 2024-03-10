@@ -54,9 +54,21 @@ para usuarios del heroku
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-***
-### `ACTIVAR EN TERMUX`
-> **Note** ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+<!-- Instalación-->
+<b><details><summary>🦉Instalación Termux</summary></b>  
+ 
+- #### ⚡️ Instalacipm Automatica Por Termux
+```bash
+termux-setup-storage
+```
+```bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/WOTCHITO/Nexus-bot/master/nexus.sh | bash
+```
+
+- #### ⚡️ Instalacion Manual Por Termux
+
+> Escribe Estos Comandos Uno Por Uno
+
 ```bash
 termux-setup-storage
 ```
@@ -76,32 +88,31 @@ git clone https://github.com/WOTCHITO/Nexus-bot && cd Nexus-bot && yarn install 
 ```bash
 ls
 ```
+```bash
+npm update
+```
 
 ```bash
 npm start
 ```
 
-### INSTALACIÓN AUTOMÁTICA POR TERMUX
-
-> **Note** Comandos para instalar de forma automática en Termux  
+- #### ⚡️ Activar En Caso De Detenerse En Termux
+> Escribe Estos Comandos Uno Por Uno
 ```bash
-termux-setup-storage
-```
-```bash
-apt update -y && yes | apt upgrade && pkg install yarn && pkg install -y
-```
-```bash
-wget -0 - https://raw.githubusercontent.com/WOTCHITO/Nexus-bot/main/nexus.sh | bash
+> cd
+> cd Nexus-bot
+> npm start
 ```
 
-### `OBTENER OTRO CODIGO QR`
+- #### ⚡️ Obtener Otro Codigo Qr
+> 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙴𝚂𝚃𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚄𝙽𝙾 𝙿𝙾𝚁 𝚄𝙽𝙾:
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
 > cd Nexus-bot
 > rm -rf sessions
 > npm start
 ```
+----
+</details>
 
  ### `DUDAS SOBRE EL BOT?, CONTACTAME`
 
