@@ -1,6 +1,6 @@
 # `NEXUS-𝗕𝗢𝗧-𝗠𝗗` 
 <p align="center">
-<img src="https://telegra.ph/file/32b888e7ce494fcab307f.jpg" alt="WOTCHITO" width="900"/>
+<img src="https://telegra.ph/file/7fa63ac3f39133ef5909f.jpg" alt="WOTCHITO" width="900"/>
 </p>
 
 
