@@ -70,7 +70,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Jxtxn17/BaileyBot-MD && cd BaileyBot-MD && yarn install && npm install
+git clone https://github.com/WOTCHITO/Nexus-bot && cd Nexus-bot && yarn install && npm install
 ```
 
 ```bash
@@ -91,7 +91,7 @@ termux-setup-storage
 apt update -y && yes | apt upgrade && pkg install yarn && pkg install -y
 ```
 ```bash
-wget -0 - https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/main/bailey.sh | bash
+wget -0 - https://raw.githubusercontent.com/WOTCHITO/Nexus-bot/main/nexus.sh | bash
 ```
 
 ### `OBTENER OTRO CODIGO QR`
