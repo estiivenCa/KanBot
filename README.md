@@ -1,6 +1,6 @@
 # `NEXUS-𝗕𝗢𝗧-𝗠𝗗` 
 <p align="center">
-<img src="https://telegra.ph/file/32b888e7ce494fcab307f.jpg" alt="BaileyBot-MD" width="900"/>
+<img src="https://telegra.ph/file/32b888e7ce494fcab307f.jpg" alt="WOTCHITO" width="900"/>
 </p>
 
 
@@ -98,7 +98,7 @@ wget -0 - https://raw.githubusercontent.com/WOTCHITO/Nexus-bot/main/nexus.sh | b
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd BaileyBot-MD1
+> cd Nexus-bot
 > rm -rf sessions
 > npm start
 ```
@@ -125,4 +125,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
        <td align="center"><a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png?size=100" width="100px;" alt=""/><br /><sub><b>Eder</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
     <td align="center"><a 
  <td align="center"><a href="https://github.com/AzamiJS"><img src="https://github.com/AzamiJS.png?size=100" width="100px;" alt=""/><br /><sub><b>Alexis</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
+    <td align="center"><a 
+ <td align="center"><a href="https://github.com/diegojadibot"><img src="https://github.com/diegojadibot.png?size=100" width="100px;" alt=""/><br /><sub><b>Diego</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
     <td align="center"><a 
