@@ -12,10 +12,8 @@ Me Gustan Los Bots!/Programar🫣
 - #### `⚡️ Clonar El Repositorio`
  Clonar NexusBot [Aqui](https://github.com/WOTCHITO/Nexus-bot/fork)
 
-<!-- Instalación-->
-<b><details><summary>🦉Instalación Termux</summary></b>  
- 
-- #### ⚡️ Instalacipm Automatica Por Termux
+
+- #### ⚡️ Instalacion Automatica Por Termux
 ```bash
 termux-setup-storage
 ```
@@ -70,11 +68,10 @@ npm start
 > npm start
 ```
 ----
-</details>
 
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creador ⚡️" width="42" height="42"> Creador ⚡️
 
-* <a href="https://wa.me/573013482814"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+ <a href="https://wa.me/573013482814"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png" width="250" height="250" alt="Eder"/></a>
