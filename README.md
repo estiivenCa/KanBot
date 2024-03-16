@@ -5,7 +5,7 @@
 
 Me Llamo Eder Un Gusto
 <br>
-Me Gustan Los Bots!/Programar🫣
+Me Gustan Los Bots!/Programar💻
 <br>
 
 
