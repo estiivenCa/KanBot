@@ -1,28 +1,16 @@
-import { watchFile, unwatchFile } from 'fs' 
- import chalk from 'chalk' 
- import fs from 'fs' 
- import cheerio from 'cheerio' 
- import fetch from 'node-fetch' 
- import axios from 'axios' 
- import path, { join } from 'path' 
- import { fileURLToPath, pathToFileURL } from 'url' 
- import moment from 'moment-timezone'  
- import { platform } from 'process' 
- global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') { return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString() }; global.__dirname = function dirname(pathURL) { return path.dirname(global.__filename(pathURL, true)) }; global.__require = function require(dir = import.meta.url) { return createRequire(dir) } 
- const __dirname = global.__dirname(import.meta.url) 
-  
- global.owner =
-[['573027866596', 'EDER💻⁷', true],
+import { watchFile, unwatchFile } from 'fs'
+import chalk from 'chalk'
+import { fileURLToPath, pathToFileURL } from 'url'
 
-//BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces: 
- //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos) 
- global.botNumberCode = '' //Ejemplo: +59309090909 
- global.confirmCode =
+global.owner = [['573027866596', 'EDER💻⁷', true]]
 
- global.animxscans = ['51929972576'] 
- global.suittag = ['51929972576'] 
- global.mods = [] 
- global.prems = []
+global.botNumberCode = ''
+global.confirmCode = ''
+
+global.suittag = ['573027866596']
+global.mods = []
+global.prems = []
+
 
 global.packname = 'ᥫ᭡nexus bot-𝙈𝘿ꨄ'
 global.author = 'eder'
