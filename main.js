@@ -131,6 +131,7 @@ console.log('Por favor, seleccione solo 1 o 2.')
 opcion = opcion
 }
 
+console.info = () => {} //dejará de aparecer la molesta "pre-key"
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : false,
@@ -165,7 +166,7 @@ if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento
 let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
-if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
+if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
 console.log(chalk.bgBlack(chalk.bold.redBright("Configure el archivo 'config.js' porque su número de WhatsApp no comienza con el código de país, Ejemplo: +593xxxx")))
 process.exit(0)
 }} else {
@@ -178,7 +179,7 @@ break
 } else {
 console.log(chalk.bgBlack(chalk.bold.redBright("Asegúrese de agregar el código de país.")))
 }}
-//rl.close()
+rl.close()
 }
 
 setTimeout(async () => {
@@ -191,7 +192,7 @@ rl.close()
 
 conn.isInit = false
 conn.well = false
-conn.user.connect = true;
+//conn.user.connect = true;
 conn.logger.info(`🔵 H E C H O\n`)
 
 if (!opts['test']) {
@@ -219,7 +220,7 @@ async function clearTmp() {
 setInterval(async () => {
 await clearTmp()
 console.log(chalk.cyan(`AUTOCLEAR │ BASURA ELIMINADA\n`))
-}, 60000) //1 munto
+}, 6000) //1 munto
 
 function purgeSession() {
 let prekey = []
@@ -288,10 +289,10 @@ console.log(chalk.yellow('⚠️ㅤEscanea este codigo QR, el codigo QR expira e
  }}
 if (connection == 'open') {
 console.log(chalk.yellowBright('\n╭───────────────────────────◉\n│\n│Conectado correctamente al WhatsApp.\n│\n╰───────────────────────────◉\n'))}
-if (conn.user.connect) {
-conn.fakeReply('573027866596@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy NexusBot\nRecientemente me e conectado', '0@s.whatsapp.net')
-conn.user.connect = false;
-}
+//if (conn.user.connect) {
+//conn.fakeReply('5217294888993@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy CuriosityBot\nRecientemente me e conectado', '0@s.whatsapp.net')
+//conn.user.connect = true;
+//}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) { 
 await fs.unlinkSync("./sessions/" + "creds.json")
