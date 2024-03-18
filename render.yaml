@@ -1,6 +1,8 @@
 services:
   - type: web
-    name: curiositybot-md
+    name: nexusbot-md
     env: docker
     region: Frankfurt
     plan: free
+
+# nexus
