@@ -1,4 +1,4 @@
-console.log('🚀 Iniciando BaileyBot-MD')
+console.log('🚀 Iniciando NexusBot-MD')
 import { join, dirname } from 'path'
 import { createRequire } from 'module'
 import { fileURLToPath } from 'url'
@@ -20,7 +20,7 @@ font: 'block',
 align: 'center',
 colors: ['magenta', 'cyan']
 })
-say(`Bot: ${name}\nVersion: 1.0.5\nCreador: Jxtxn ~ Ax\nNumero: +51 929 972 576\nEmail: baileybotmd@gmail.com`, {
+say(`Bot: ${name} By: Eder ~ Worchito`, {
 font: 'console',
 gradient: ['blue', 'magenta']
 })
