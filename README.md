@@ -71,7 +71,7 @@ npm start
 
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creador ⚡️" width="42" height="42"> Creador ⚡️
 
- <a href="https://wa.me/573013482814"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+ <a href="https://wa.me/573027866596"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ### Editor & Propietario Del Bot 🥀
 [![WOTCHITO](https://github.com/WOTCHITO.png?size=100)](https://github.com/WOTCHITO)
