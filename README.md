@@ -78,5 +78,5 @@ npm start
 
  ### Colaboradores Del Bot ⚡️
 [![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) 
-[![Ender-GB-Isis777](https://github.com/EnderGB-Isis777.png?size=100)]
+[![Ender-GB-Isis777](https://github.com/Ender-GB-Isis777.png?size=100)]
 [![diegojadibot](https://github.com/diegojadibot.png?size=100)](https://github.com/diegojadibot) [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21)
