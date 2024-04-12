@@ -8,7 +8,7 @@ _${usedPrefix}ytmp4_`.trim();
 
   if (command == "cursos") {
     var play = `*[ CURSOS ]*\n\n*Mini cursos de programación*\n
-*Entra al canal de cursos y guias gratis https://whatsapp.com/channel/0029VaUzrr0HLHQU93Ig2t3I *\n*en el canal hay cursos básicos de programación*\n\n*aparte si tienes dudas mande mensaje al creador, o al numero +573027866596*\n\n¡¡Disfruta de los mini cursos!!`.trim();
+\n*en el canal hay cursos básicos de programación*\n\n*aparte si tienes dudas mande mensaje al creador, o al numero +573027866596*\n\n¡¡Disfruta de los mini cursos!!`.trim();
     m.reply(play);
   }
 };
