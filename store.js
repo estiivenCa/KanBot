@@ -41,9 +41,9 @@ global.sityImg = [img, img1, img2, img3, img4, img5, img6, img7]
 
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
-global.ig = 'https://www.instagram.com/b.jxtxn17'
+global.ig = 'https://www.instagram.com/eder_basto2005'
 global.md = 'https://github.com/Jxtxn17/BaileyBot-MD'
-global.paypal = 'https://paypal.me/Azami19'
+global.paypal = 'https://paypal.me/eder'
 global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/Gd85w1s6tKh5Nw4p490xBw' //Grupo ofc
 global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
