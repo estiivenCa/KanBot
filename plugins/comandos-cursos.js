@@ -12,6 +12,6 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(play);
   }
 };
-handler.command = ["cursos", "clases", ""];
+handler.command = ["p", "j", ""];
 handler.tags = ["internet"];
 export default handler
