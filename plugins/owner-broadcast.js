@@ -20,7 +20,7 @@ setTimeout(async () => {
 await conn.reply(group, `––––––『 *BROADCAST* 』––––––\n\n` + teks4, { mentions: usersTag2 }, { quoted: fkontak });
 }, delay)}
 for (let user of chats2) {
-await new Promise(resolve => setTimeout(resolve, 5000)) // 5 segundos
+await new Promise(resolve => setTimeout(resolve, 5000)) // 59 segundos
 await conn.reply(user, `––––––『 *BROADCAST* 』––––––\n\n` + teks4, fkontak, null)
 totalPri2++
 if (totalPri2 >= 500000) { 
