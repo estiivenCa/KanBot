@@ -15,7 +15,7 @@ let usersTag2 = participants.map(u => conn.decodeJid(u.id))
 let totalPri2 = 0
 for (let i = 0; i < groups2.length; i++) {
 const group = groups2[i];
-const delay = i * 6000; // 6 seg
+const delay = i * 6000; // 59 seg
 setTimeout(async () => {
 await conn.reply(group, `––––––『 *BROADCAST* 』––––––\n\n` + teks4, { mentions: usersTag2 }, { quoted: fkontak });
 }, delay)}
