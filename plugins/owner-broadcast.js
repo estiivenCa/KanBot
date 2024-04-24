@@ -15,12 +15,12 @@ let usersTag2 = participants.map(u => conn.decodeJid(u.id))
 let totalPri2 = 0
 for (let i = 0; i < groups2.length; i++) {
 const group = groups2[i];
-const delay = i * 6000; // 59 seg
+const delay = i * 60000; // 59 seg
 setTimeout(async () => {
 await conn.reply(group, `––––––『 *BROADCAST* 』––––––\n\n` + teks4, { mentions: usersTag2 }, { quoted: fkontak });
 }, delay)}
 for (let user of chats2) {
-await new Promise(resolve => setTimeout(resolve, 5000)) // 59 segundos
+await new Promise(resolve => setTimeout(resolve, 60000)) // 59 segundos
 await conn.reply(user, `––––––『 *BROADCAST* 』––––––\n\n` + teks4, fkontak, null)
 totalPri2++
 if (totalPri2 >= 500000) { 
@@ -41,7 +41,7 @@ time2 = `${time2} segundos`
 await m.reply(`📑 MENSAJE ENVIADO A:
 \`\`\`Chats privados >> ${totalPrivate2}\`\`\`
 \`\`\`Chats grupales >>   ${totalGroups2}\`\`\`
-\`\`\`Chats totales  >>   ${total2}\`\`\`\n\n*𝚃𝙸𝙴𝙼𝙿𝙾 𝚃𝙾𝚃𝙰𝙻 𝙳𝙴 𝙴𝙽𝚅𝙸𝙾 ${time2}*\n${totalPri2 >= 500000 ? `\n*𝐍𝐎𝐓𝐀: 𝙴𝚂 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝚀𝚄𝙴 𝚃𝙴𝙽𝙶𝙰 𝙵𝙰𝙻𝙻𝙾𝚂 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚈 𝙽𝙾 𝚂𝙴 𝙴𝙽𝚅𝙸𝙴 𝙰 𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝙲𝙷𝙰𝚃𝚂, 𝙳𝙸𝚂𝙲𝚄𝙻𝙿𝙴 𝙿𝙾𝚁 𝙴𝙻 𝙼𝙾𝙼𝙴𝙽𝚃𝙾*` : ''}`)        
+\`\`\`Chats totales  >>   ${total2}\`\`\`\n\n*𝚃𝙸𝙴𝙼𝙿𝙾 𝚃𝙾𝚃𝙰𝙻 𝙳𝙴 𝙴𝙽𝚅𝙸𝙾 ${time2}*\n${totalPri2 >= 600000 ? `\n*𝐍𝐎𝐓𝐀: 𝙴𝚂 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝚀𝚄𝙴 𝚃𝙴𝙽𝙶𝙰 𝙵𝙰𝙻𝙻𝙾𝚂 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚈 𝙽𝙾 𝚂𝙴 𝙴𝙽𝚅𝙸𝙴 𝙰 𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝙲𝙷𝙰𝚃𝚂, 𝙳𝙸𝚂𝙲𝚄𝙻𝙿𝙴 𝙿𝙾𝚁 𝙴𝙻 𝙼𝙾𝙼𝙴𝙽𝚃𝙾*` : ''}`)        
 }
 handler.help = ['broadcast', 'bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
