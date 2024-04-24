@@ -77,4 +77,4 @@ npm start
 [![WOTCHITO](https://github.com/WOTCHITO.png?size=100)](https://github.com/WOTCHITO)
 
  ### Colaboradores Del Bot ⚡️
-[![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) [![Diego-YL-177](https://github.com/Diego-YL-177.png?size=100)](https://github.com/Diego-YL-177) [![Ender-GB-Isis777](https://github.com/Ender-GB-Isis777.png?size=100)] [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21)
+[![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) [![Diego-YL-177](https://github.com/Diego-YL-177.png?size=100)](https://github.com/Diego-YL-177) [![EnderJs-CreatorGL](https://github.com/EnderJs-CreatorGL.png?size=100)] [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21)
