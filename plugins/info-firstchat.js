@@ -16,7 +16,7 @@ await m.reply(`👋 Hola ${nombre}!!
 ⚠️ *Nota:* no envíe spam al bot
 🧃 Escriba *.menu* para mostrar el menú 
   
-📝 ¿Quieres apoyar este proyecto para que siga actualizándose? enviar a través de: 
-*https://paypal.me/azami.19*`) 
+📝 ¿Quieres apoyar este proyecto para que siga actualizándose? Siga El canal de nexus bot: 
+*https://whatsapp.com/channel/0029VaF00bv4o7qSseKNrQ1n*`) 
 user.pc = new Date * 1
 }
