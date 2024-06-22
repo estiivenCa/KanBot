@@ -20,12 +20,14 @@ global.wm2 = '✦nexus bot-𝗠𝗗✦'
 global.jxtxn = 'eder'
 global.cb = '⏤͟͟͞͞Nexus bot-ＭＤ'
 
-global.vs = '1.0.2'
+//Las Versiones Y Entre Otros
+global.vs = 'V2'
 global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = '51929972576'
+global.dev = 'GataNina-Li'
+global.devnum = '+593 96 826 3524'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
