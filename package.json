@@ -1,5 +1,5 @@
 {
-"name": "NexusBot-MD",
+"name": "Nexus-bot",
 "version": "1.0.0", 
 "description": "WhatsApp Bot",
 "main": "index.js",
@@ -29,7 +29,7 @@
 "url": "https://github.com/WOTCHITO/NexusBot-MD/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
-"@whiskeysockets/baileys": "npm:@whiskeysockets/baileys@6.7.2 "
+"@whiskeysockets/baileys": "npm:@whiskeysockets/baileys@6.7.2",
 "@adiwajshing/keyed-db": "^0.2.4",
 "@bochilteam/scraper": "4.2.4",
 "@brandond/findthelyrics": "^2.0.5",
