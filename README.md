@@ -1,13 +1,7 @@
-## `Ⓝ︎ 𝗡𝗲𝘅𝘂𝘀 : 𝗕𝗼𝘁 - 𝗠𝗗 🦁` 
+## `Ⓝ︎ 𝗡𝗲𝘅𝘂𝘀 : 𝗕𝗼𝘁 - 𝗠𝗗` 
 <p align="center">
 <img src="https://telegra.ph/file/7fa63ac3f39133ef5909f.jpg" alt="WOTCHITO" width="900"/>
 </p>
-
-Me Llamo Eder Un Gusto
-<br>
-Me Gustan Los Bots!/Programar💻
-<br>
-
 
 - #### `⚙️ Clonar El Repositorio`
  Clonar NexusBot [Aqui](https://github.com/WOTCHITO/Nexus-bot/fork)
@@ -73,8 +67,10 @@ npm start
 
  <a href="https://wa.me/573027866596"><img alt="Eder Creador 🍧" src="https://img.shields.io/badge/Eder-Creador🍧-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
-### Editor & Propietario Del Bot 🥀
+### Propietario Del Bot 🥀
 [![WOTCHITO](https://github.com/WOTCHITO.png?size=100)](https://github.com/WOTCHITO)
 
  ### Colaboradores Del Bot ⚡️
-[![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) [![Diego-YL-177](https://github.com/Diego-YL-177.png?size=100)](https://github.com/Diego-YL-177) [![EnderJs-CreatorGL](https://github.com/EnderJs-CreatorGL.png?size=100)](https://github.com/EnderJs-CreatorGL) [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21)
+[![AzamiJs](https://github.com/AzamiJs.png?size=100)](https://github.com/AzamiJs) [![Diego-YL-177](https://github.com/OfcDiego.png?size=100)](https://github.com/OfcDiego) [![![EnderJs-CreatorGL](https://github.com/EnderJs-CreatorGL.png?size=100)](https://github.com/EnderJs-CreatorGL) 
+[![ElRebeldeOfc](https://github.com/Elrebelde21.png?size=100)](https://github.com/Elrebelde21) 
+[![Gabriel Øfc](https://github.com/glytglobal.png?size=100)](https://github.com/glytglobal) 
