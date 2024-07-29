@@ -563,7 +563,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  rowner: '⚠️️ *ESTE COMANDO SOLO MI DESAROLLADOR LO PUEDE USAR*', 
  owner: '⚠️ *ESTE COMANDO SOLO MI PROPIETARIO LO PUEDE USAR*', 
  mods: '⚠️ *ESTA FUNCIÓN SOLO ES PARA MIS MODERADORES*', 
- premium: '⚠️ *ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
+ premium: '⚠️ *ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*.\n\n> usa .sc para contactar al dueño para ser usuario premium.', 
  group: '⚠️ *LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
  private: '⚠️ *ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
  admin: '⚠️️ *ESTE COMANDO SOLO PUEDE SER USADO POR ADMINS*', 
