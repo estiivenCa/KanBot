@@ -13,10 +13,8 @@ await m.reply(`👋 Hola ${nombre}!!
 📅 Fecha: ${fecha}
 ⏰ Hora: ${tiempo}
 
-⚠️ *Nota:* no envíe spam al bot
-🧃 Escriba *.menu* para mostrar el menú 
-  
-📝 ¿Quieres apoyar este proyecto para que siga actualizándose? Siga El canal de nexus bot: 
-*https://whatsapp.com/channel/0029VaF00bv4o7qSseKNrQ1n*`) 
+*◉ 𝙽𝙾 𝙴𝙽𝚅𝙸𝙴́ 𝚂𝙿𝙰𝙼 𝙰𝙻 𝙱𝙾𝚃*
+*◉ 𝙴𝚂𝙲𝚁𝙸𝙱𝙰 .𝙼𝙴𝙽𝚄́ 𝙿𝙰𝚁𝙰 𝚅𝙴𝚁 𝙻𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂*
+*◉ 𝙿𝙰𝚁𝙰 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝙴𝙻 𝙱𝙾𝚃 𝙰 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾 𝚄𝚂𝙰 .𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝚁𝙱𝙾𝚃*`) 
 user.pc = new Date * 1
 }
