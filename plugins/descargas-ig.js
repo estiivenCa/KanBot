@@ -6,8 +6,8 @@ import { instagramdl } from '@bochilteam/scraper'
  
 var handler = async (m, {conn, args, command, usedPrefix}) => {
  
-if (!args[0]) return conn.reply(m.chat, `🎌 *Ingrese un enlace de instagram*\n\nEjemplo ${usedPrefix + command} https://www.instagram.com/reel/CuqAzGRAbZa/?igshid=MzRlODBiNWFlZA==`, m, fake, )
-conn.reply(m.chat, `⏰ Espere un momento`, m, fake, )
+if (!args[0]) return conn.reply(m.chat, `🎌 *Ingrese un enlace de instagram*\n\nEjemplo ${usedPrefix + command} https://www.instagram.com/reel/CuqAzGRAbZa/?igshid=MzRlODBiNWFlZA==`, m,  )
+conn.reply(m.chat, `⏰ Espere un momento`, m,  )
 
 try {
 
