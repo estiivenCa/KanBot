@@ -13,12 +13,12 @@ global.mods = []
 global.prems = []
 
 
-global.packname = 'ᥫ᭡nexus bot-𝙈𝘿ꨄ'
-global.author = 'eder'
-global.wm = '𓆩Nexus bot-𝐌𝐃𓆪'
-global.wm2 = '✦nexus bot-𝗠𝗗✦'
+global.packname = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
+global.author = 'by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
+global.wm = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
+global.wm2 = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
 global.jxtxn = 'eder'
-global.cb = '⏤͟͟͞͞Nexus bot-ＭＤ'
+global.cb = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
 
 //Las Versiones Y Entre Otros
 global.vs = 'V2'
