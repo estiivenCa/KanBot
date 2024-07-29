@@ -20,13 +20,18 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
  let info = ` 
- *📑 INFO BAILEY BOT MD* 
-  
- 👑 *CREADOR* 
-  *Jxtxn17*
+ *📑 INFO ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰ * 
+ 
+ Hola, para cualquier duda sobre el Bot puedes contactarme aqui:
+   
+ 🥀 *DUEÑO* 
+ * ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×*
  -------------------------- 
  🥏 *CONTACTO*  
-  *${ig}* 
+  *wa.me/5492612357997* 
+ -------------------------- 
+  👑 *CREADOR* 
+  *Jxtxn17*
  -------------------------- 
  🌐 *VERSIÓN ACTUAL* 
   ${vs} 
