@@ -256,7 +256,7 @@ jddt()
 handler.help = [`jadibot`, `serbot`, `getcode`, `rentbot`]
 handler.tags = [`jadibot`]
 handler.command = /^(jadibot|serbot|rentbot)/i
-
+handler.premium = true
 handler.private = false
 
 export default handler
