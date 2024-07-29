@@ -2,25 +2,21 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 let handler  = async (m, { conn }) => {
 let texto = `
 ╭─────────────┈⊷
-│ *INSTALACIÓN DE BAILEYBOT-MD*
+│ *Hola 👋 para agregar el Bot a tu grupo se debe tener en cuenta:*
 ╰┬────────────┈⊷
-┌┤ *REQUISITOS PARA LAS INSTALACION*
-┌┤➳ _Dudas: wa.me/51929972576
-┌┤➳ _Tutoríal: https://youtu.be/qRb9ElGT8mM_
-┌┤➳ _1 GB de almacenamiento_
-┌┤➳ _Termux: https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file_
-┌┤➳ _GitHub: https://github.com/Jxtxn17/BaileyBot-MD_
-┌┤➳ _un whatsapp inmune (secundario)_
-┌┤➳ _un número victual_
-┌┤➳ _2 dispositivo o una PC para escanear_
+┌┤ KanBot🥀
+┌┤➳ _Usa .Link y el link de tu grupo_
+┌┤➳ _Ejemplo: *.link https://chat.whatsapp.com*_
+┌┤➳ _El dueño del Bot evaluara el link lo mas pronto posible para ver si cumple con los requisitos minimos_
+┌┤➳ _Si se cumple el Bot se unira al grupo_
 ╰┬────────────┈⊷
-  │ *COMANDO DE INSTALACION TERMUX*
-  │> termux-setup-storage
-  │> apt-get update -y && apt-get upgrade -y
-  │> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-  │> git clone https://github.com/Jxtxn17/BaileyBot-MD && cd BaileyBot-MD && yarn install && npm install 
-  │> ls 
-  │> npm start 
+  │ *⚠️REGLAS PARA EL BOT EN EL GRUPO⚠️*
+  │> Evite el Spam de comandos
+  │> *Si el Bot es eliminado tendra que hablar con el dueño para que lo vuelva agregar*
+  │> Si se ve saturacion de comandos en el grupo el Bot saldra del grupo
+  │> Evite el privado y las llamadas al Bot
+  │> _*Cualquier duda contacte al dueño del Bot con .infobot*_
+  │> GRACIAS POR PREFERIR A KANBOT🥀
   ╰────────────┈⊷` 
 let aa = { quoted: m, userJid: conn.user.jid }
 let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: `${texto}`.trim(), contextInfo: { externalAdReply: { title: 'Jxtxn17 ©', body: null, thumbnail: imagen2, sourceUrl: 'https://github.com/Jxtxn17/TurboBot-MD' }, mentionedJid: [m.sender] }}}, aa)
