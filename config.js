@@ -2,8 +2,8 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath, pathToFileURL } from 'url'
 
-global.owner = [['573027866596', 'EDER💻⁷', true],
-['50558124470', 'Ender owner🖥️', true]]
+global.owner = [['573028488839', 'EDER💻⁷', true],
+['5492612357997', 'Ender owner🖥️', true]]
 
 global.botNumberCode = ''
 global.confirmCode = ''
