@@ -4,7 +4,7 @@ let texto = `
 ╭─────────────┈⊷
 │ *Hola 👋 para agregar el Bot a tu grupo se debe tener en cuenta:*
 ╰┬────────────┈⊷
-┌┤ KanBot🥀
+┌┤ ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰
 ┌┤➳ _Usa .Link y el link de tu grupo_
 ┌┤➳ _Ejemplo: *.link https://chat.whatsapp.com*_
 ┌┤➳ _El dueño del Bot evaluara el link lo mas pronto posible para ver si cumple con los requisitos minimos_
@@ -15,7 +15,7 @@ let texto = `
   │> *Si el Bot es eliminado tendra que hablar con el dueño para que lo vuelva agregar*
   │> Si se ve saturacion de comandos en el grupo el Bot saldra del grupo
   │> Evite el privado y las llamadas al Bot
-  │> _*Cualquier duda contacte al dueño del Bot con .infobot*_
+  │> _*Cualquier duda contacte al dueño del Bot con .sc*_
   │> GRACIAS POR PREFERIR A KANBOT🥀
   ╰────────────┈⊷` 
 let aa = { quoted: m, userJid: conn.user.jid }
