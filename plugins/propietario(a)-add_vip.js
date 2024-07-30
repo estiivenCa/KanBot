@@ -13,6 +13,6 @@ handler.help = ['addprem <@user>']
 handler.tags = ['owner']
 handler.command = /^(add|\+)prem$/i
 handler.group = true
-handler.admin = true
+handler.owner = true
 handler.botAdmin = true
 export default handler
