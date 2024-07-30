@@ -21,30 +21,9 @@ import fetch from 'node-fetch';
      const taguser = '@' + m.sender.split('@s.whatsapp.net')[0]; 
      const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document']; 
      const document = doc[Math.floor(Math.random() * doc.length)]; 
-     const str = `┏━━━━━━━━━━━━━━━━━━ 
- ┣┅⟣✦ 𝘽𝙖𝙞𝙡𝙚𝙮𝗕𝗼𝘁-𝗠𝗗 
- ┣┅⟣✦ 𝗖𝗼𝗹𝗮𝗯𝗼𝗿𝗮𝗱𝗼𝗿𝗲𝘀(𝗦𝘁𝗮𝗳𝗳) 
- ┗━━━━━━━━━━━━━━━━━━┛ 
- ━━━━━━━━━━━━━━━━━━━━ 
- ┣┅⟣✦𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼𝘀 𝗚𝗶𝘁𝗵𝘂𝗯 
-  
- ┣𝘼𝙭𝙚𝙡|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Jxtxn17/BaileyBot-MD 
-  
- ┣𝗔𝘇𝗮𝗺𝗶|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/AZamijs/Curiositybot-MD 
-  
- ┣𝗛𝗮𝗰𝗵𝗲𝗷𝗼𝘁𝗮|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/HACHEJOTA/Hachiko-bot-MD 
-  
- ┣𝙀𝙣𝙙𝙚𝙧|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Ender-GB-Isis777/LOBO-BOT-MD
-  
- ┣𝗘𝗱𝗲𝗿|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Aleixon127271 
-  
- ┣┅⟣✦𝗡𝘂𝗺𝗲𝗿𝗼𝘀  
- ┣𝘼𝙭𝙚𝙡:+51 929 972 576
- ┣𝗔𝘇𝗮𝗺𝗶:+52 729 488 8993 
- ┣𝗛𝗮𝗰𝗵𝗲𝗷𝗼𝘁𝗮:+52 443 786 3111 
- ┣𝙀𝙣𝙙𝙚𝙧:+505 5812 4470
- ┣𝗘𝗱𝗲𝗿:+57 310 6040746 
- ┗━━━━━━━━━━━━━━━━━━┛ 
+     const str = ` ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰ 
+     
+     _*El link sera evaluado por mi dueño lo mas pronto posible, por favor tenga paciencia Gracias*_\n\n>Por favor tenga en cuenta las reglas del Bot en un grupo con .instalarbot
   `.trim(); 
      if (m.isGroup) { 
        // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
@@ -59,7 +38,7 @@ import fetch from 'node-fetch';
      conn.reply(m.chat, '[❕] 𝗔𝗹𝗴𝗼 𝘀𝗮𝗹𝗶𝗼 𝗺𝗮𝗹, 𝗽𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁𝗲𝗹𝗼 𝗮𝗹 𝗦𝘁𝗮𝗳𝗳', m); 
    } 
  }; 
- handler.command = /^(colab|colaboradores)$/i; 
+ handler.command = /^(cns|pg)$/i; 
  handler.exp = 50; 
  handler.fail = null; 
  export default handler; 
