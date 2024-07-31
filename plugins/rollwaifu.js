@@ -25,4 +25,6 @@ function mostrarWaifu(waifu) {
 const waifuAleatoria = obtenerWaifuAleatoria();
 mostrarWaifu(waifuAleatoria);
 ```
-handler.command = ['rollwaifu', 'rw']
+handler.command = ['rollwaifu', 'rw'];
+
+export default handler;
