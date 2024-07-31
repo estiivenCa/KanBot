@@ -24,7 +24,7 @@ function mostrarWaifu(waifu) {
 // Ejecuta la función para obtener y mostrar una waifu aleatoria
 const waifuAleatoria = obtenerWaifuAleatoria();
 mostrarWaifu(waifuAleatoria);
-```
+
 handler.command = ['rollwaifu', 'rw'];
 
 export default handler;
