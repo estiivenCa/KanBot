@@ -14,10 +14,10 @@ global.prems = []
 
 
 global.packname = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
-global.author = 'by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
+global.author = ''
 global.wm = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
 global.wm2 = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
-global.jxtxn = 'eder'
+global.jxtxn = 'Kan'
 global.cb = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
 
 //Las Versiones Y Entre Otros
@@ -27,7 +27,7 @@ global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
 global.dev = 'GataNina-Li'
-global.devnum = '+593 96 826 3524'
+global.devnum = ''
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
