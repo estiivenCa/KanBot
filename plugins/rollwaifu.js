@@ -31,3 +31,24 @@ handler.command = ['rw', 'rollwaifu'];
 handler.register = true;
 
 export default handler;
+
+ function clockString(ms) { 
+   let h = Math.floor(ms / 3600000) 
+   let m = Math.floor(ms / 60000) % 60 
+   let s = Math.floor(ms / 1000) % 60 
+   console.log({ms,h,m,s}) 
+   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':') 
+ } 
+
+ /*function msToTime(duration) { 
+ var milliseconds = parseInt((duration % 1000) / 100), 
+ seconds = Math.floor((duration / 1000) % 60), 
+ minutes = Math.floor((duration / (1000 * 60)) % 60), 
+ hours = Math.floor((duration / (1000 * 60 * 60)) % 24) 
+  
+ hours = (hours < 10) ? "0" + hours : hours 
+ minutes = (minutes < 10) ? "0" + minutes : minutes 
+ seconds = (seconds < 10) ? "0" + seconds : seconds 
+  
+ return minutes + " m y " + seconds + " s "  
+ }  */
