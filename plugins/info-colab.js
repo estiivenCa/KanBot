@@ -23,7 +23,7 @@ import fetch from 'node-fetch';
      const document = doc[Math.floor(Math.random() * doc.length)]; 
      const str = ` ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰ 
      
-     _*El link sera evaluado por mi dueño lo mas pronto posible, por favor tenga paciencia Gracias*_\n\n>Por favor tenga en cuenta las reglas del Bot en un grupo con .instalarbot
+     _*El link sera evaluado por mi dueño lo mas pronto posible, por favor tenga paciencia Gracias*_\n\n>Por favor tenga en cuenta las reglas del Bot en un grupo con .reglas
   `.trim(); 
      if (m.isGroup) { 
        // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
