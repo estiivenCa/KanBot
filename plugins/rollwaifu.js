@@ -6,7 +6,7 @@ const waifus = [
   { nombre: 'Asuna Yuuki', anime: 'Sword Art Online' },
   { nombre: 'Hestia', anime: 'DanMachi' },
   { nombre: 'Rias Gremory', anime: 'High School DxD' },
-  { nombre: 'Saber', anime: 'Fate/stay night' }
+  { nombre: 'Saber', anime: 'Fate/stay night' },
   // Agrega más waifus aquí...
 ];
 
