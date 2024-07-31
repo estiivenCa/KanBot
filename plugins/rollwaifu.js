@@ -6,7 +6,7 @@ const waifus = [
   { nombre: 'Asuna Yuuki', anime: 'Sword Art Online' },
   { nombre: 'Hestia', anime: 'DanMachi' },
   { nombre: 'Rias Gremory', anime: 'High School DxD' },
-  { nombre: 'Saber', anime: 'Fate/stay night' },
+  { nombre: 'Saber', anime: 'Fate/stay night' }
   // Agrega más waifus aquí...
 ];
 
@@ -24,7 +24,7 @@ function mostrarWaifu(waifu) {
 // Ejecuta la función para obtener y mostrar una waifu aleatoria
 const waifuAleatoria = obtenerWaifuAleatoria();
 mostrarWaifu(waifuAleatoria);
-}
+};
 handler.help = ['rollwaifu'];
 handler.tags = ['anime'];
 handler.command = ['rw', 'rollwaifu'];
