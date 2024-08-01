@@ -1,16 +1,34 @@
-import Starlights from '@StarlightsTeam/Scraper'
+import fg from 'api-dylux';
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return m.reply('🍭 Ingresa el enlace del vídeo de FaceBook junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://www.facebook.com/official.trash.gang/videos/873759786348039/?mibextid=rS40aB7S9Ucbxw6v`)
+const handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!args[0]) {
+    throw `✳️ Por favor envíe el enlace de un vídeo de Facebook\n\n📌 EJEMPLO :\n*${usedPrefix + command}* https://www.facebook.com/Ankursajiyaan/videos/981948876160874/?mibextid=rS40aB7S9Ucbxw6v`;
+  }
 
-try {
-let { title, SD, HD } = await Scraper.fbdl(args[0])
-await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: `*🍭 Titulo ∙* ${title}` }, { quoted: m})
-} catch {
-}}
-handler.help = ['facebook <url fb>']
-handler.tags = ['downloader']
-handler.command = ['fb', 'fbdl', 'facebookdl', 'facebook']
-handler.register = true 
-//handler.limit = 1
-export default handler
+  const urlRegex = /^(?:https?:\/\/)?(?:www\.)?(?:facebook\.com|fb\.watch)\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
+  if (!urlRegex.test(args[0])) {
+    throw '⚠️ PLEASE GIVE A VALID URL.';
+  }
+  try {
+    const result = await fg.fbdl(args[0]);
+    const tex = `
+↳ *Titulo del video:* ${result.title}`;
+
+    const response = await fetch(result.videoUrl);
+    const arrayBuffer = await response.arrayBuffer();
+    const videoBuffer = Buffer.from(arrayBuffer);
+
+    conn.sendFile(m.chat, videoBuffer, 'fb.mp4', tex, m);
+    m.react(done);
+  } catch (error) {
+    console.log(error);
+    m.reply('> video descargado con exito');
+  }
+};
+
+handler.help = ['facebook <url>'];
+handler.tags = ['downloader'];
+handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
+handler.diamond = true;
+
+export default handler;
