@@ -39,6 +39,7 @@
 "@shineiichijo/marika": "^2.0.6",    
 "@vitalets/google-translate-api": "^9.2.0",
 "@xct007/frieren-scraper": "^0.0.2",
+ "@SumiFX/Scraper": "github:BrunoSobrino/SumiFX-Scraper",
 "@tensorflow/tfjs": "^3.18.0",
 "acrcloud": "^1.4.0",
 "api-dylux": "^1.5.5",
