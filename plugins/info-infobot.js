@@ -28,7 +28,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  * ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×*
  -------------------------- 
  🥏 *CONTACTO*  
-  *wa.me/5492612357997* 
+  *wa.me/67078866397* 
  -------------------------- 
   👑 *CREADOR* 
   *Jxtxn17*
