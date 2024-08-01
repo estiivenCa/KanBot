@@ -1,32 +1,28 @@
-import { googleIt } from '@bochilteam/scraper'
+import {googleIt} from '@bochilteam/scraper';
+import google from 'google-it';
+import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
-const fetch = (await import('node-fetch')).default
-let full = /f$/i.test(command)
-let text = args.join` `
-if (!text) return conn.reply(m.chat, `*⚠️ ESCRIBA LO QUE QUIERE BUSCAR*\n\n❕ EJEMPLO:\n*${usedPrefix + command}* Bailey`, m)
-let pp = './storage/menus/Menu1.jpg'
-let url = 'https://google.com/search?q=' + encodeURIComponent(text)
-let search = await googleIt(text)
-let msg = search.articles.map(({
-// header,
-title,
-url,
-description
-}) => {
-return `*🔍 ${title}*\n\n💻 ${url}\n\n📡 _${description}_\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`
-}).join('\n\n')
-
-
-try {
-let ss = await (await fetch(global.API('nrtm', '/api/ssweb', { delay: 1000, url, full }))).arrayBuffer()
-if (/<!DOCTYPE html>/i.test(ss.toBuffer().toString())) throw ''
-await conn.sendFile(m.chat, ss, 'error.png', url + '\n\n' + msg, m)
-} catch (e) {
-m.reply(msg)
-}}
-handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
-handler.tags = ['internet']
-handler.command = /^googlef?$/i
-handler.register = true
-
-export default handler
+const fetch = (await import('node-fetch')).default;
+const text = args.join` `;
+if (!text) return conn.reply(m.chat, '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *Ingresa lo que deseas buscar en Google.*', m, fake,);
+await conn.sendMessage(m.chat, {
+        text: ` *𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾́𝙽 𝙻𝙸𝚂𝚃𝙰 🍿*.`,
+        contextInfo: { 
+          mentionedJid: [m.sender],
+        }
+      }, { quoted: m }).then(_ => m.react('⏰'))
+const url = 'https://google.com/search?q=' + encodeURIComponent(text);
+google({'query': text}).then(res => {
+let teks = `*🧸 Resultado de* : ${text}\n\n`
+for (let g of res) {
+teks += `*Titulo 🍧*: ${g.title}\n*Link 🍿*: ${g.link}\n*Info 🍫*: ${g.snippet}\n\n`
+}
+conn.reply(m.chat, teks, m, ).then(_ => m.react('✅'))
+})
+}
+handler.help = ['google <búsqueda>'];
+handler.tags = ['tools', 'search'];
+handler.command = /^googlef?$/i;
+handler.star = 1
+handler.register = true 
+export default handler;
