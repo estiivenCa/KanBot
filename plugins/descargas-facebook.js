@@ -4,12 +4,9 @@ import fs from 'fs';
 let enviando = false;
 
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  const idioma = global.db.data.users[m.sender].language;
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
-  const tradutor = _translate.plugins.descargas_facebook;
 
   if (!args[0]) {
-    throw `_*${tradutor.texto1[0]}*_\n\n*${tradutor.texto1[1]}*\n\n*${tradutor.texto1[2]}* _${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/_`;
+    throw `_*< DESCARGAS - FACEBOOK />*_\n\n*[ ℹ️ ] Ingrese un enlace de Facebook.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/_`;
   }
 
   /*const linkface = await isValidFacebookLink(args[0]);
@@ -19,7 +16,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
 
   if (!enviando) enviando = true;
   try {
-    await m.reply(`_*${tradutor.texto3}*`);
+    await m.reply(`_*< DESCARGAS - FACEBOOK />*_\n\n*[ ℹ️ ] Se está enviando el video. espere...*`);
     
     const response = await fetch(`${global.MyApiRestBaseUrl}/api/facebook?url=${args[0]}&apikey=${global.MyApiRestApikey}`);
     const data = await response.json();
@@ -29,7 +26,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
       await conn.sendMessage(m.chat, {
         video: videoBuffer, 
         filename: 'video.mp4', 
-        caption: `_*${tradutor.texto4}*_`
+        caption: `_*< DESCARGAS - FACEBOOK />*_`
       }, {quoted: m});
       enviando = false;
     } else {
@@ -39,7 +36,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
   } catch (error) {
     console.error('Error occurred:', error);
     enviando = false;
-    throw `_*${tradutor.texto5}*`;
+    throw `_*< DESCARGAS - FACEBOOK />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
   }
 };
 
