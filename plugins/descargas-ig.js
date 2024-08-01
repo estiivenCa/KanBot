@@ -1,52 +1,14 @@
-import fetch from 'node-fetch';
-
-const apiURL = 'https://delirius-api-oficial.vercel.app/api/instagram';
+import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0] || !args[0].match(/instagram\.com/i)) 
-    throw `Usa el comando así: ${usedPrefix}${command} [enlace de Instagram]`;
+if (!args[0]) return conn.reply(m.chat, '*`Ingresa el enlace del vídeo de Instagram junto al comando.`*', m)
+try {
+let { dl_url } = await Starlights.igdl(args[0])
+await conn.sendFile(m.chat, dl_url, 'igdl.mp4', null, m, null, rcanal)
+} catch {
+}}
+handler.help = ['instagram *<link>*']
+handler.tags = ['dl']
+handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i
 
-  const url = args[0].trim();
-  const apiUrl = `${apiURL}?url=${encodeURIComponent(url)}`;
-
-  const response = await fetch(apiUrl);
-  if (!response.ok) {
-    console.error('Error al buscar el contenido de Instagram:', response.statusText);
-    throw 'Ocurrió un error al buscar el contenido de Instagram';
-  }
-  
-  const data = await response.json();
-  const mediaData = data.data;
-
-  if (!mediaData || mediaData.length === 0) 
-    throw 'No se encontraron datos válidos de la publicación de Instagram';
-
-  for (const media of mediaData) {
-    if (!media.url) continue;
-    
-    const mediaResponse = await fetch(media.url);
-    if (!mediaResponse.ok) {
-      console.error('Error al descargar el contenido de Instagram:', mediaResponse.statusText);
-      throw 'Ocurrió un error al descargar el contenido de Instagram';
-    }
-  
-    const mediaBuffer = await mediaResponse.buffer();
-
-    const caption = `𝙳𝙴𝚂𝙲𝙰𝙶𝙰𝚁𝙳𝙾𝚁 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼:\n${url}\n𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 - 𝙲𝚄𝚁𝙸`;
-
-    conn.sendFile(
-      m.chat,
-      mediaBuffer,
-      'video.mp4',
-      caption,
-      m
-    );
-  }
-};
-
-handler.help = ['instagram <enlace>'];
-handler.tags = ['downloader'];
-handler.command = ['instagram', 'ig'];
-handler.register = true;
-
-export default handler;
+export default handler
