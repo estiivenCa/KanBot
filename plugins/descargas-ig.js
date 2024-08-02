@@ -25,7 +25,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['ig <enlace>'];
 handler.tags = ['descargas'];
-handler.command = ['ig', 'instagram'];
+handler.command =/^(instagram|ig(dl)?)$/i
 handler.register = true;
 handler.limit = 1;
 
