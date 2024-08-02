@@ -10,11 +10,6 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   const waitMessage = '🍁 *Descargando su video de Instagram*';
   const errorMessage = '🍁 Ocurrió un error inesperado.';
   const videoCaption = `✅️ *Su Video De Instagram*`; // Eliminado botname
-  const packname = 'TuPackName'; // Reemplaza con el nombre de tu paquete
-  const wm = 'TuMarcaDeAgua'; // Reemplaza con tu marca de agua
-  const icons = 'https://example.com/thumbnail.jpg'; // Reemplaza con la URL de tu imagen en miniatura
-  const channel = 'https://example.com'; // Reemplaza con la URL de tu canal
-  const fkontak = { // Define aquí cómo debería ser `fkontak`
     key: {
       fromMe: false,
       participant: '1234567890@s.whatsapp.net',
@@ -33,20 +28,6 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
   try {
     // Envía un mensaje de espera con información de contexto
-    conn.reply(m.chat, waitMessage, m, {
-      contextInfo: {
-        externalAdReply: {
-          mediaUrl: null,
-          mediaType: 1,
-          showAdAttribution: true,
-          title: packname,
-          body: wm,
-          previewType: 0,
-          thumbnail: icons,
-          sourceUrl: channel
-        }
-      }
-    });
 
     // Obtiene la URL de descarga del video
     let { dl_url } = await Scraper.igdl(args[0]);
