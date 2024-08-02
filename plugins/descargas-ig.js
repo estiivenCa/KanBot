@@ -15,7 +15,7 @@ await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Vi
 handler.help = ['ig <enlace>']
 handler.tags = ['descargas']
 handler.command = ['ig', 'instagram']
-handler.register = true
-handler.limit = 1
+
+
 
 export default handler
