@@ -43,7 +43,7 @@ await conn.reply(m.chat, "*_❏ 🍃 Ocurrio un error inesperado_*", m,msg);
 }
 
 handler.help = ["ᴍᴇɢᴀ"]
-handler.tags = ["downloader"]
+ handler.tags = ['descargas'] 
 handler.command = ["megas"]
 export default handler
 
