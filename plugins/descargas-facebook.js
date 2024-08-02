@@ -5,7 +5,7 @@ if (!args || !args[0]) return conn.reply(m.chat, '🚩 Ingresa el enlace del ví
 await m.react('🕓')
 try {
 let { title, SD, HD } = await Starlights.fbdl(args[0])
-await conn.sendFile(m.chat, SD || HD, 'fbdl.mp4', `*» Título* : ${title}`, m, null, rcanal)
+await conn.sendFile(m.chat, SD || HD, 'fbdl.mp4', `*» Título* : ${title}`, m, null, )
 await m.react('✅')
 } catch {
 await m.react('✖️')
