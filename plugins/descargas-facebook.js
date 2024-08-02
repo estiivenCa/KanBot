@@ -1,18 +1,33 @@
-import Starlights from '@StarlightsTeam/Scraper'
+import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args || !args[0]) return conn.reply(m.chat, '🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://www.facebook.com/official.trash.gang/videos/873759786348039/?mibextid=rS40aB7S9Ucbxw6v`, m)
-await m.react('🕓')
-try {
-let { title, SD, HD } = await Starlights.fbdl(args[0])
-await conn.sendFile(m.chat, SD || HD, 'fbdl.mp4', `*» Título* : ${title}`, m, null, )
-await m.react('✅')
-} catch {
-await m.react('✖️')
-}}
-handler.help = ['fb *<link fb>*']
-handler.tags = ['downloader'] 
-handler.command = /^(facebook|fb|facebookdl|fbdl)$/i
-//handler.limit = 1
-handler.register = true
-export default handler
+  if (!args[0]) return m.reply('*`Ingresa un enlace de Facebook`*');
+
+  try {
+    await m.react('🕓'); 
+    const apiResponse = await fetch(`https://thepapusteam.koyeb.app/api/fbvideodownload?url=${args[0]}`);
+    const responseData = await apiResponse.json();
+    
+    if (responseData.success) {
+      const { creator, title, src_url, og_url, picture, links, r_id } = responseData;
+      let txt = '    `Facebook downloader`\n\n';
+      txt += `> *Título*: _${title}_\n`;
+      txt += `> *Enlace de origen*: ${src_url}\n`;
+      txt += `> *Enlace OG*: ${og_url}\n`;
+      txt += `> *ID*: ${r_id}\n`;
+      txt += `> *Imagen*: ${picture}\n`;
+
+      await conn.sendMessage(m.chat, { video: { url: links[0].link }, caption: txt }, { quoted: m });
+      await m.react('✅'); 
+    } else {
+      await m.react('❌'); 
+    }
+  } catch {
+    await m.react('❌'); 
+  }
+}
+
+handler.help = ['facebook *<link>*'];
+handler.tags = ['dl'];
+handler.command = ['fb', 'facebook', 'FB', 'FACEBOOK'];
+export default handler;
