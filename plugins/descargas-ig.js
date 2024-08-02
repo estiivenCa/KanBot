@@ -3,12 +3,13 @@ import axios from 'axios';
 import instagramGetUrl from 'instagram-url-direct';
 import { instagram } from '@xct007/frieren-scraper';
 import { instagramdl } from '@bochilteam/scraper';
+import Scraper from '@SumiFX/Scraper';
 
 const handler = async (m, { conn, args, usedPrefix, command }) => {
   // Configuración de mensajes y parámetros
   const waitMessage = '🍁 *Descargando su video de Instagram*';
   const errorMessage = '🍁 Ocurrió un error inesperado.';
-  const videoCaption = `✅️ *Su Video De Instagram*\n${botname}`; // Reemplaza botname con el nombre de tu bot
+  const videoCaption = `✅️ *Su Video De Instagram*`; // Eliminado botname
   const packname = 'TuPackName'; // Reemplaza con el nombre de tu paquete
   const wm = 'TuMarcaDeAgua'; // Reemplaza con tu marca de agua
   const icons = 'https://example.com/thumbnail.jpg'; // Reemplaza con la URL de tu imagen en miniatura
