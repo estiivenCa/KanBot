@@ -1,28 +1,16 @@
-import fetch from 'node-fetch';
+import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) return m.reply('*`Ingresa un enlace de facebook`*');
+if (!args[0]) return m.reply('🍭 Ingresa el enlace del vídeo de FaceBook junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://www.facebook.com/official.trash.gang/videos/873759786348039/?mibextid=rS40aB7S9Ucbxw6v`)
 
-  try {
-await m.react('🕓'); 
-    const apiResponse = await fetch(`https://thepapusteam.koyeb.app/api/fbvideodownload?url=${args[0]}`);
-    const responseData = await apiResponse.json();
-    
-    if (responseData.success) {
-      const { title, links } = responseData;
-      let txt = '    `Facebook downloader`\n\n';
-      txt += `> *Titulo* : _${title}_\n`;
-
-      await conn.sendMessage(m.chat, { video: { url: links[0].link }, caption: txt }, { quoted: m });
-await m.react('✅'); 
-    } else {
-    }
-  } catch {
-await m.react('❌'); 
-  }
-}
-
-handler.help = ['facebook *<link>*'];
-handler.tags = ['dl'];
-handler.command = ['fb', 'facebook', 'FB', 'FACEBOOK'];
-export default handler;
+try {
+let { title, SD, HD } = await Scraper.fbdl(args[0])
+await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: `*🍭 Titulo ∙* ${title}` }, { quoted: m})
+} catch {
+}}
+handler.help = ['facebook <url fb>']
+handler.tags = ['downloader']
+handler.command = ['fb', 'fbdl', 'facebookdl', 'facebook']
+handler.register = true 
+//handler.limit = 1
+export default handler
