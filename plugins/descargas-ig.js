@@ -14,20 +14,6 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   const icons = 'https://example.com/thumbnail.jpg'; // Reemplaza con la URL de tu imagen en miniatura
   const channel = 'https://example.com'; // Reemplaza con la URL de tu canal
 
-  // Mensaje de contacto para WhatsApp (ejemplo, ajústalo si es necesario)
-  const fkontak = {
-    key: {
-      fromMe: false,
-      participant: '1234567890@s.whatsapp.net',
-      remoteJid: 'status@broadcast'
-    },
-    message: {
-      contactMessage: {
-        displayName: 'Bot',
-        vcard: 'BEGIN:VCARD\nVERSION:3.0\nFN:Bot\nTEL;TYPE=CELL:1234567890\nEND:VCARD'
-      }
-    }
-  };
 
   if (!args[0]) return m.reply('🍁 Ingresa un enlace de Instagram.');
 
