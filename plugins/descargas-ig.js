@@ -10,8 +10,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     // Obtener la URL de descarga del video
     let { dl_url } = await Scraper.igdl(args[0]);
 
-    // Enviar el video descargado al chat
-    await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Video De Instagram*` }, { quoted: fkontak });
+    // Enviar el video descargado al chat sin citar un mensaje
+    await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Video De Instagram*` });
   } catch (e) {
     console.log(e);
     m.reply('🍁 Ocurrió un error inesperado.');
@@ -23,4 +23,3 @@ handler.tags = ['descargas'];
 handler.command = ['ig', 'instagram'];
 
 export default handler;
-
