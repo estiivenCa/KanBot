@@ -268,7 +268,7 @@ if (!/[01]/.test(command)) return await conn.reply(m.chat, `┏━━━━━�
 ┃ _.on *gconly*_
 ┃ _.on *autoread*_
 ┃ _.on *modejadibot*_
-┗━━━━━━━━━━━━━━━━ `, fkontak, m)
+┗━━━━━━━━━━━━━━━━ `, fkontak, m, fake,)
 throw false
 }
 conn.reply(m.chat, `*${isEnable ? '❕' : '❗'} La función ${type} se a ${isEnable ? 'activado' : 'desactivado'} en ${isAll ? 'este bot' : isUser ? '' : 'este chat'}*`, fkontak, m)
