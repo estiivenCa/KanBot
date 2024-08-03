@@ -12,7 +12,7 @@ conn.reply(m.chat, `*╭─────◈☘️◈──────╮*
 
 ${pickRandom(global.consejo)}
 
-*╰─────◈☘️◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '☘️ Consejo ☘️', body: saludo, sourceUrl: global.fake, thumbnail: suerte }}})
+*╰─────◈☘️◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '☘️ Consejo ☘️', body: saludo, sourceUrl: global.channel, thumbnail: suerte }}})
   
 }
 handler.help = ['consejo']
