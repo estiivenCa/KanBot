@@ -13,7 +13,7 @@ let str = `
 │ ${yt}
 ┗───◆ CUENTAS ◆───┛`
 
-await conn.sendFile(m.chat, media, 'gata.mp4', str, channel, fkontak)}
+await conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)}
 
 handler.tags = ['main']
 handler.command = /^cuentasoficiales|cuentasofc|cuentas$/i
