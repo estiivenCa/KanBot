@@ -109,6 +109,6 @@ global.enlaces = linkSity.getRandom()
  global.taguser = '@' + m.sender.split("@s.whatsapp.net")[0] 
  global.fake = { contextInfo: { externalAdReply: {title: saludo + ` ${m.name}`, body: dev, sourceUrl: enlaces, thumbnailUrl: fotos }}
 }
-global.fake = { contextInfo: { mentionedJid: conn.parseMention(wm), forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { serverMessageId: '', newsletterName: `☁️ Bienvenido ` + nombre }, externalAdReply: { title: wm + ` 💫`, body: dev, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fotos, thumbnail: imagen1, sourceUrl: https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N }}}, { quoted: m } //Fake con reenvio del canal ofc del bot!
+global.fake = { contextInfo: { mentionedJid: conn.parseMention(wm), forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { serverMessageId: '', newsletterName: `☁️ Bienvenido ` + nombre }, externalAdReply: { title: wm + ` 💫`, body: dev, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fotos, thumbnail: imagen1, sourceUrl: 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' }}}, { quoted: m } //Fake con reenvio del canal ofc del bot!
 }
 export default handler 
