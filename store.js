@@ -40,18 +40,18 @@ global.img7 = 'https://telegra.ph/file/951275803faa754aff010.jpg'
 global.sityImg = [img, img1, img2, img3, img4, img5, img6, img7]
 
 //Enlaces
-global.yt = 'https://www.youtube.com/@Azami_Mods'
-global.ig = 'https://www.instagram.com/eder_basto2005'
-global.md = 'https://github.com/Jxtxn17/BaileyBot-MD'
-global.paypal = 'https://paypal.me/eder'
-global.git = 'https://github.com/Jxtxn17'
-global.nn = 'https://chat.whatsapp.com/Gd85w1s6tKh5Nw4p490xBw' //Grupo ofc
-global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
-global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
-global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
-global.nnn = 'https://chat.whatsapp.com/ENP021x0aR5HWvG1HpvlCo' //Bailey global
-global.channel = 'https://whatsapp.com/channel/0029VaF00bv4o7qSseKNrQ1n' //BaileyBot-MD
-global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
+global.yt = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N'
+global.ig = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N'
+global.md = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N'
+global.paypal = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N'
+global.git = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N'
+global.nn = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //Grupo ofc
+global.Curiosity = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //Curiosity OFC
+global.hachiko = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //Hachiko OFC
+global.Lobo = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //Lobo OFC
+global.nnn = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //Bailey global
+global.channel = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //BaileyBot-MD
+global.nnnn = 'https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' //colaboración multi bots
 global.linkSity = [yt, ig, md, paypal, git, nn]
 
 //Raíz
