@@ -26,7 +26,7 @@ global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = 'GataNina-Li'
+global.dev = '✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰'
 global.devnum = ''
 
 let file = fileURLToPath(import.meta.url)
