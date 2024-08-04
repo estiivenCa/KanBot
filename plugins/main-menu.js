@@ -39,6 +39,7 @@ const defaultMenu = {
 ┃├⫹⫺ *Dueño :* * ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×*
 ┃├⫹⫺ *Contacto:* Con .sc
 ┃├⫹⫺ *Tiempo Activo:* %uptime
+┃├⫹⫺ *Channel:* https://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N
 ┃│*Registrado :* %rtotalreg de %totalreg usuarios
 ┃╰──────────────
 ┗━━━━━━━━━━━━━━━━━━━━━━
