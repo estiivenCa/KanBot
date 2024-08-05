@@ -7,7 +7,7 @@ const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
 conn.sendFile(m.chat, link, 'error.jpg', `📍 *Resultado de:* ${text}
-🔎 *𝘽𝙪𝙨𝙘𝙖𝙙𝙤 𝙚𝙣:* 𝙂𝙤𝙤𝙜𝙡𝙚`, fliveLoc, m) 
+🔎 *𝘽𝙪𝙨𝙘𝙖𝙙𝙤 𝙚𝙣:* 𝙂𝙤𝙤𝙜𝙡𝙚`, fliveLoc, m, fake) 
 }
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['dl']
