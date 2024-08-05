@@ -179,7 +179,7 @@ handler.exp = 3
 export default handler
 
 const more = String.fromCharCode(8206)
-const readMore = more.repeat(10)
+const readMore = more.repeat(5)
 
 function clockString(ms) {
   let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
