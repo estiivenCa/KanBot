@@ -16,18 +16,18 @@ if (!/image\/(jpe?g|png|mp4)/.test(mime))
 throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙞́𝙢𝙞𝙘𝙖 ${mime} 𝙉𝙤 𝙨𝙤𝙥𝙤𝙧𝙩𝙖𝙙𝙖*` 
 else conn.hdr[m.sender] = true
 
-m.reply('*🚀 P R O C E S A N D O*')
+m.reply('*🚀 P R O C E S A N D O*', fake,)
 let img = await q.download?.()
 
 let error
 try {
 const This = await processing(img, "enlace")
-conn.sendFile(m.chat, This, '', '🧃 Toma tu foto', m)
+conn.sendFile(m.chat, This, '', '🧃 Toma tu foto', m, fake,)
 } catch (er) {
 error = true
 } finally {
 if (error) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝙁𝘼𝙇𝙇𝙄𝘿𝙊*')
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝙁𝘼𝙇𝙇𝙄𝘿𝙊*',fake,)
 }
 delete conn.hdr[m.sender]
 }}
