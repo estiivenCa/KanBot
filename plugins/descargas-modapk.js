@@ -8,7 +8,7 @@ import { search, download } from 'aptoide-scraper'
      await m.react('🔄')
  let searchA = await search(text) 
  let data5 = await download(searchA[0].id) 
- let response = `💌 *Nombre:* ${data5.name}\n📦 *Paquete:* ${data5.package}\n🕒 *Actualización:* ${data5.lastup}\n📥 *Tamaño:* ${data5.size}` 
+ let response = `💌 *Nombre:* ${data5.name}\n📦 *Paquete:* ${data5.package}\n🕒 *Actualización:* ${data5.lastup}\n📥 *Tamaño:* ${data5.size}\n*Enviando por favor espera...*\n> Mientras esperas sigueme en mi canal carck\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N` 
  await conn.sendMessage(m.chat, { text: response, contextInfo: { externalAdReply: { title: data5.name, body: wm, sourceUrl: md, thumbnailUrl: data5.icon, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })    
   
   if (data5.size.includes('GB') || data5.size.replace(' MB', '') > 999) { 
