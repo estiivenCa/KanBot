@@ -40,6 +40,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: yt_play[0].title, 
  body: wm2, 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -58,6 +59,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: ttl, 
  body: "", 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -71,6 +73,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: yt_play[0].title, 
  body: "", 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -84,6 +87,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: yt_play[0].title, 
  body: "", 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -98,6 +102,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: n, 
  body: "", 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -113,6 +118,7 @@ import fetch from 'node-fetch'
  externalAdReply: { 
  title: __res[0].title, 
  body: "", 
+  sourceUrl: global.channel,
  thumbnailUrl: yt_play[0].thumbnail,  
  mediaType: 1, 
  showAdAttribution: true, 
@@ -145,7 +151,7 @@ import fetch from 'node-fetch'
  let n4 = lolh.result.thumbnail 
  await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${n}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${n3}`, thumbnail: await fetch(n4) }, { quoted: m }) 
  } catch { 
- await conn.reply(m.chat, '*⚠️ NO FUE POSIBLE DESCARGAR EL VÍDEO*', m)}}}     
+ await conn.reply(m.chat, '*⚠️ NO FUE POSIBLE DESCARGAR EL VÍDEO*', m, fake)}}}     
  }} catch { 
  throw "*⚠️ ERROR, INTENTALO DE NUEVO*"} 
  } 
