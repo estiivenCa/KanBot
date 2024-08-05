@@ -5,7 +5,7 @@ m.react(rwait)
 const json = await pinterest(text)
 conn.sendFile(m.chat, json.getRandom(), 'pinterest.jpg', `
 📍 *Resultado de:* ${text}
-🔎 *𝘽𝙪𝙨𝙘𝙖𝙙𝙤 𝙚𝙣:* 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩`.trim(), fliveLoc, m)
+🔎 *𝘽𝙪𝙨𝙘𝙖𝙙𝙤 𝙚𝙣:* 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩`.trim(), fliveLoc, m, fake)
 }
 handler.help = ['pinterest <keyword>']
 handler.tags = ['dl']
