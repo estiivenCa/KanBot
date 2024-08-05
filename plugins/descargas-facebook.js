@@ -1,4 +1,4 @@
-mport { igdl } from 'ruhend-scraper';
+import { igdl } from 'ruhend-scraper';
 import fetch from 'node-fetch';
 import axios from 'axios';
 
