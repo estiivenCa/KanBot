@@ -16,7 +16,7 @@ if (!/image\/(jpe?g|png|mp4)/.test(mime))
 throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙞́𝙢𝙞𝙘𝙖 ${mime} 𝙉𝙤 𝙨𝙤𝙥𝙤𝙧𝙩𝙖𝙙𝙖*` 
 else conn.hdr[m.sender] = true
 
-m.reply('*🚀 P R O C E S A N D O*', fake,)
+m.reply('*🚀 P R O C E S A N D O*', m, fake,)
 let img = await q.download?.()
 
 let error
