@@ -2,6 +2,7 @@ import { search, download } from 'aptoide-scraper'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 if (!text) throw `*Error*\n[ 💡 ] Ejemplo ${usedPrefix + command} WhatsApp Plus`
 try {
+ await conn.sendMessage(m.chat, { text: '*Descargando el APK, por favor espera...*' }, { quoted: m })
 const searchResult = await search(text)
 const data = await download(searchResult[0].id)
 if (data.size.includes('GB') || parseFloat(data.size.replace(' MB', '')) > 300) {
