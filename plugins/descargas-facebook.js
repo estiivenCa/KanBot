@@ -23,6 +23,7 @@ return conn.reply(m.chat, '*`Ingresa Un Link De Facebook`*', m);
   let res;
 try {
 await m.react('🕒');
+  await conn.sendMessage(m.chat, { text: '*Descargando el video, por favor espera...*' }, { quoted: m });
 res = await igdl(args[0]);
 if (!res.data || res.data.length === 0) {}
 
