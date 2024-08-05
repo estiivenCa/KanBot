@@ -486,7 +486,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]).replace('@date', global.fecha).replace('@time', global.tiempo) 
  let links = linkSity.getRandom() 
   
- this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'W E L C O M E', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl": ``, "sourceUrl": global.channel, "thumbnail": apii.data}}}) 
+ this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'W E L C O M E', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl":  global.channel, "sourceUrl": global.channel, "thumbnail": apii.data}}}) 
   
  }}} 
   
