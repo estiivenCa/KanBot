@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 if (!text) throw `*Error*\n[ 💡 ] Ejemplo ${usedPrefix + command} WhatsApp Plus`
 try {
   await m.react('🔄')
- await conn.sendMessage(m.chat, { text: '*Descargando el APK, por favor espera...*\n\n> Mientras esperas sigueme en mi canal carck\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' }, { quoted: m })
+ await conn.sendMessage(m.chat, { text: '*Descargando el APK, por favor espera...*\n> Mientras esperas sigueme en mi canal carck\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' }, { quoted: m })
 const searchResult = await search(text)
 const data = await download(searchResult[0].id)
 if (data.size.includes('GB') || parseFloat(data.size.replace(' MB', '')) > 300) {
