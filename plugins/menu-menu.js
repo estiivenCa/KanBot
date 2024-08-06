@@ -1,5 +1,3 @@
-//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios & https://github.com/AzamiJs | @Azami
-
 import fs from 'fs'
 import { parsePhoneNumber } from 'libphonenumber-js'
 import fetch from 'node-fetch'
@@ -32,21 +30,25 @@ const fload = { key : { message: `NexusBot-MD ` + `\nEder`, thumbnail: await (aw
 
 m.react('🏷️')
 
-let menu = `*👋 Hola, ${user}*
+// Crear la lista de secciones
+let listSections = []
+listSections.push({
+    title: '',
+    rows: [
+        { header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` },
+        { header: "Sub-bot", title: "", id: `.jadibot --code`, description: `Para volverte sub-bot 🤖 (usuarios premium) \n` },
+        { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
+        { header: "Play", title: "", id: `.play`, description: `Descarga tus musicas favoritas 🎧\n` },
+        { header: "Dueño", title: "", id: `.infobot`, description: `Contacta al dueño del bot` }
+    ]
+})
 
-_${formatDate}_
+// Enviar el mensaje de lista
+await conn.sendList(m.chat, '👋🏻 Hola, Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Dueño:* ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×⁩\n*Versión:* 1.0.0\n\n si hay algún error o alguna duda puedes contactarme, usa el comando: .infobot\n\nGracias¡! 🔴', null, `Selecione una opcion`, listSections, { mentions: [m.sender]}, {quoted: m})
 
-*País*: ${nombreLugar} 
-*Ciudad*: ${ciudad}
-
-!allmenu
-_(Para ver el menú completo)_`
-
-await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
-
-} catch {
-conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
-console.log(e)
+} catch (e) {
+    conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
+    console.log(e)
 }}
 handler.help = ['menu']
 handler.tags = ['bot']
