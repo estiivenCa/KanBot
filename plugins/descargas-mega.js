@@ -43,9 +43,8 @@ var handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
         // Enviar el archivo al chat
         await conn.reply(m.chat, `💌 *Nombre:* ${fileName}\n📊 *Peso:* ${formatBytes(fileSize)}\n*🧿 Enviando por favor espera...*\n> Mientras esperas sígueme en mi canal crack 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N`, fliveLoc, m);
 
-        if (!isLimit) {
-            await conn.sendFile(m.chat, buffer, fileName, '', m, null, { mimetype, asDocument: true });
-        }
+       if (!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true });
+
         m.react(done);
     } catch (e) {
         m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊.𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝙂𝘼*`);
