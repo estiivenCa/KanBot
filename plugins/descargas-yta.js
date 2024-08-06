@@ -54,6 +54,6 @@ await conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙍𝙍𝙊𝙍, 𝙉�
 }
 handler.help = ['yta']
 handler.tags = ['descargas']
-handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3)$/i
+handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3|mp3)$/i
 
 export default handler
