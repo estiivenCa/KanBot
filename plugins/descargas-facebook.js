@@ -23,7 +23,7 @@ return conn.reply(m.chat, '*`Ingresa Un Link De Facebook`*', m);
   let res;
 try {
 await m.react('🕒');
-  await conn.sendMessage(m.chat, { text: '*Descargando el video, por favor espera...*\n> Mientras esperas sigueme en mi canal carck\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' }, { quoted: m });
+  await conn.sendMessage(m.chat, { text: '*🧿 Descargando el video, por favor espera...*\n> Mientras esperas sigueme en mi canal carck 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N' }, { quoted: m });
 res = await igdl(args[0]);
 if (!res.data || res.data.length === 0) {}
 
