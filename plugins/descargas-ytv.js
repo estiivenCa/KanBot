@@ -31,6 +31,6 @@ m.react(error)}
 }
 handler.help = ['ytv']
 handler.tags = ['descargas']
-handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i 
+handler.command = /^mp4|fgmp4|dlmp4|getvid|yt(v|mp4)?$/i 
 
 export default handler
