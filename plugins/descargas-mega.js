@@ -37,13 +37,14 @@ var handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
             ".jpg": "image/jpeg",
             ".jpeg": "image/jpeg",
             ".png": "image/png",
+            ".apk": "application/vnd.android.package-archive", // Agregado para APK
         };
         let mimetype = mimeTypes[fileExtension] || "application/octet-stream";
 
         // Enviar el archivo al chat
         await conn.reply(m.chat, `💌 *Nombre:* ${fileName}\n📊 *Peso:* ${formatBytes(fileSize)}\n*🧿 Enviando por favor espera...*\n> Mientras esperas sígueme en mi canal crack 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N`, fliveLoc, m);
 
-       if (!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true });
+        if (!isLimit) await conn.sendFile(m.chat, buffer, fileName, '', m, null, { mimetype, asDocument: true });
 
         m.react(done);
     } catch (e) {
