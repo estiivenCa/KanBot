@@ -1,23 +1,32 @@
-import fetch from "node-fetch";
-import path from "path";
+import fetch from 'node-fetch';
+import { File } from 'megajs'; // Importar la biblioteca de Mega
+import path from 'path';
 
-let handler = async (m, { conn, args, usedPrefix, text, command }) => {
+var handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) => {
+    var limit;
+    if ((isOwner || isPrems)) limit = 1000;
+    else limit = 600;
+
+    if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙈𝙀𝙂𝘼*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix}mega* https://mega.nz/file/yourfileid#yourfilekey`;
+
+    if (!args[0].match(/mega/gi)) throw `[❗𝐈𝐍𝐅𝐎❗] 𝙇𝙄𝙉𝙆 𝙄𝙉𝘾𝙊𝙍𝙍𝙀𝘾𝙏𝙊*`;
+
     try {
-        if (!text) return m.reply('*_Ingresa un enlace de la página web_*\n\n`Ejemplo:`\n' + `> ❒ *${usedPrefix + command}* https://example.com/file.pdf`);
+        m.react(rwait);
+        
+        const fileUrl = args[0];
+        const file = File.fromURL(fileUrl);
+        await file.loadAttributes();
 
-        const url = text;
-        const downloadingMessage = `*Descargando archivo desde la página web*`;
-        m.reply(downloadingMessage);
+        // Limitar el tamaño del archivo si es necesario
+        const fileSize = file.size;
+        const isLimit = (isPrems || isOwner ? limit : limit) * 1012 < fileSize;
 
-        // Descargar el archivo usando fetch
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Network response was not ok');
-        const buffer = await response.buffer();
-
-        // Obtener el nombre del archivo desde la URL
-        const urlParts = url.split('/');
-        const fileName = urlParts[urlParts.length - 1];
-
+        // Descargar el archivo
+        const buffer = await file.downloadBuffer();
+        
+        // Obtener el nombre del archivo y su extensión
+        const fileName = file.name;
         const fileExtension = path.extname(fileName).toLowerCase();
         const mimeTypes = {
             ".mp4": "video/mp4",
@@ -29,26 +38,28 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
             ".jpeg": "image/jpeg",
             ".png": "image/png",
         };
-
         let mimetype = mimeTypes[fileExtension] || "application/octet-stream";
 
-        const caption = `
-*_Descarga Exitosa..._*
+        // Enviar el archivo al chat
+        await conn.reply(m.chat, `💌 *Nombre:* ${fileName}\n📊 *Peso:* ${formatBytes(fileSize)}\n*🧿 Enviando por favor espera...*\n> Mientras esperas sígueme en mi canal crack 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N`, fliveLoc, m);
 
-> ❒➺ *Archivo :* ${fileName}
-> ❒➺ *Peso :* ${formatBytes(buffer.length)}`;
-
-        await conn.sendFile(m.chat, buffer, fileName, caption, m, null, { mimetype, asDocument: true });
-
-    } catch (error) {
-        await conn.reply(m.chat, "*_❏ 🍃 Ocurrió un error inesperado_*", m, msg);
+        if (!isLimit) {
+            await conn.sendFile(m.chat, buffer, fileName, '', m, null, { mimetype, asDocument: true });
+        }
+        m.react(done);
+    } catch (e) {
+        m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊.𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝙂𝘼*`);
+        console.log(e);
     }
 }
 
-handler.help = ["descargar"]
+handler.help = ['mega']
 handler.tags = ['descargas']
-handler.command = ["mega"]
-export default handler
+handler.command = ['mega']
+handler.diamond = true
+handler.register = true
+
+export default handler;
 
 function formatBytes(bytes) {
     if (bytes === 0) return '0 Bytes';
