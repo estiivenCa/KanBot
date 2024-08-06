@@ -50,7 +50,6 @@ console.log(e)
 handler.help = ['menu']
 handler.tags = ['bot']
 handler.command = /^(menu|menú)$/i
-handler.register = true
 
 export default handler
 
