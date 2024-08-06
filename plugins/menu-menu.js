@@ -13,54 +13,65 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 
 var handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 
-try {
+    try {
+        let user = conn.getName(m.sender)
+        let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 
-let user = conn.getName(m.sender)
+        let fechaMoment, formatDate, nombreLugar, ciudad = null
+        const phoneNumber = '+' + m.sender
+        const parsedPhoneNumber = parsePhoneNumber(phoneNumber)
+        const countryCode = parsedPhoneNumber.country
+        const countryData = ct.getCountry(countryCode)
+        const timezones = countryData.timezones
+        const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'
+        moment.locale('es')
+        let lugarMoment = moment().tz(zonaHoraria)
+        if (lugarMoment) {
+            fechaMoment = lugarMoment.format('llll [(]a[)]')
+            formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1)
+            nombreLugar = countryData.name
+            const partes = zonaHoraria.split('/')
+            ciudad = partes[partes.length - 1].replace(/_/g, ' ')
+        } else {
+            lugarMoment = moment().tz('America/Mexico_City')
+            fechaMoment = lugarMoment.format('llll [(]a[)]')
+            formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1)
+            nombreLugar = 'America'
+            ciudad = 'Ciudad de México'
+        }
 
-let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
-let links = linkSity.getRandom()
+        let listSections = [{
+            title: 'Menú Completo',
+            rows: [
+                { title: "Menú Completo", description: "Para ver todos los comandos", id: '.allmenu' },
+                { title: "Sub-bot", description: "Para volverte sub-bot 🤖 (usuarios premium)", id: '.jadibot --code' },
+                { title: "Velocidad", description: "Ver velocidad del bot", id: '.ping' },
+                { title: "Play", description: "Descarga tus músicas favoritas 🎧", id: '.play' },
+                { title: "Dueño", description: "Contacta al dueño del bot", id: '.infobot' }
+            ]
+        }]
 
-let fechaMoment, formatDate, nombreLugar, ciudad = null; const phoneNumber = '+' + m.sender; const parsedPhoneNumber = parsePhoneNumber(phoneNumber); const countryCode = parsedPhoneNumber.country; const countryData = ct.getCountry(countryCode); const timezones = countryData.timezones; const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'; moment.locale('es'); let lugarMoment = moment().tz(zonaHoraria); if (lugarMoment) { fechaMoment = lugarMoment.format('llll [(]a[)]'); formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1); nombreLugar = countryData.name; const partes = zonaHoraria.split('/'); ciudad = partes[partes.length - 1].replace(/_/g, ' '); } else { lugarMoment = moment().tz('America/Mexico_City'); fechaMoment = lugarMoment.format('llll [(]a[)]'); formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1); nombreLugar = 'America'; ciudad = 'Ciudad de México' }
+        await conn.sendList(m.chat, '👋🏻 Hola, Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Dueño:* ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×⁩\n*Versión:* 1.0.0\n\nSi hay algún error o alguna duda, puedes contactarme usando el comando: .infobot\n\nGracias¡! 🔴', null, `Selecciona una opción`, listSections, { mentions: [m.sender] }, { quoted: m })
 
-//FAKES
-let a = {'key': {'participants': '0@s.whatsapp.net', 'fromMe': false, 'id': '3B64558B07848BD81108C1D14712018E'}, 'message': {'locationMessage': {'name': `${user}`, 'jpegThumbnail': await (await fetch(pp)).buffer(), 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}
-const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsapp.net' }, message: { orderMessage: { itemCount : 2023, status: 1, surface : 1, message: `${user}!`, orderTitle: `▮Menu ▸`, sellerJid: '0@s.whatsapp.net' }}}
-const fload = { key : { message: `NexusBot-MD ` + `\nEder`, thumbnail: await (await fetch(pp)).buffer(), sellerJid: '0@s.whatsapp.net' }}
+    } catch (e) {
+        conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m)
+        console.log(e)
+    }
+}
 
-m.react('🏷️')
-
-// Crear la lista de secciones
-let listSections = []
-listSections.push({
-    title: '',
-    rows: [
-        { header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` },
-        { header: "Sub-bot", title: "", id: `.jadibot --code`, description: `Para volverte sub-bot 🤖 (usuarios premium) \n` },
-        { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
-        { header: "Play", title: "", id: `.play`, description: `Descarga tus musicas favoritas 🎧\n` },
-        { header: "Dueño", title: "", id: `.infobot`, description: `Contacta al dueño del bot` }
-    ]
-})
-
-// Enviar el mensaje de lista
-await conn.sendList(m.chat, '👋🏻 Hola, Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Dueño:* ⁨𝑺̳̽𝒕̳̽𝒊̳𝒊̳𝒗̳̽𝒙̳̽𝒏̳̽×፝֟͜×⁩\n*Versión:* 1.0.0\n\n si hay algún error o alguna duda puedes contactarme, usa el comando: .infobot\n\nGracias¡! 🔴', null, `Selecione una opcion`, listSections, { mentions: [m.sender]}, {quoted: m})
-
-} catch (e) {
-    conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
-    console.log(e)
-}}
 handler.help = ['menu']
 handler.tags = ['bot']
-handler.command = /^(menu)$/i
+handler.command = /^(menu|menú)$/i
 
 export default handler
 
 function clockString(ms) {
-let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+    let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+    let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+    let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
 
 function pickRandom(list) {
-return list[Math.floor(Math.random() * list.length)]}
+    return list[Math.floor(Math.random() * list.length)]
+}
