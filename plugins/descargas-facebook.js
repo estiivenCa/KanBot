@@ -22,6 +22,7 @@ return conn.reply(m.chat, '*`Ingresa Un Link De Facebook`*', m);
 
   let res;
 try {
+  await m.react('🕒');
   await conn.sendMessage(m.chat, {
     text: '*🧿 Descargando el video, por favor espera...*\n> Mientras esperas, sígueme en mi canal, crack 😎',
     contextInfo: {
