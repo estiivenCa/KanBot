@@ -2,7 +2,7 @@ import Scraper from '@SumiFX/Scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) return m.reply('🍁 Ingresa un enlace de Instagram.')
 try {
-conn.reply(m.chat, '*🧿 Descargando su video de Instagram*', m, {
+conn.reply(m.chat, '*🧿 Descargando su video de Instagram espera un momento\n\n> Mientras esperas sigueme en mi canal crack 😎*', m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
