@@ -15,7 +15,7 @@ const size = await yt.video[q].fileSizeH
 await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 𝙏𝙄́𝙏𝙐𝙇𝙊*\n${ttl}\n\n*📊 𝙋𝙀𝙎𝙊*\n${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: fake })
 } catch {
 try {
-let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkeysapi}&url=${args[0]}`)    
+let lolhuman = await fetch(`https://deliriusapi-official.vercel.app/download/ytmp4?url=${args[0]}`)    
 let lolh = await lolhuman.json()
 let n = lolh.result.title || 'error'
 let n2 = lolh.result.link
