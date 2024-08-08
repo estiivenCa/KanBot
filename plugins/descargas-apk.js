@@ -18,6 +18,7 @@ try {
             }
         }
     }, 
+                           { quoted: m }
 );
 const searchResult = await search(text)
 const data = await download(searchResult[0].id)
