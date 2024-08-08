@@ -23,7 +23,7 @@ import fg from 'api-dylux';
                 sourceUrl: channel // URL del canal
             }
         }
-    }
+    },
                           { quoted: m }
 );
  try { 
