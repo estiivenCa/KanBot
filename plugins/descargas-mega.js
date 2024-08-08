@@ -42,7 +42,24 @@ var handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
         let mimetype = mimeTypes[fileExtension] || "application/octet-stream";
 
         // Enviar el archivo al chat
-        await conn.reply(m.chat, `💌 *Nombre:* ${fileName}\n📊 *Peso:* ${formatBytes(fileSize)}\n*🧿 Enviando por favor espera...*\n> Mientras esperas sígueme en mi canal crack 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N`, fliveLoc, m);
+        await conn.reply(m.chat, 
+            `💌 *Nombre:* ${fileName}\n📊 *Peso:* ${formatBytes(fileSize)}\n*🧿 Enviando, por favor espera...*\n> Mientras esperas, sígueme en mi canal, crack 😎`,
+            fliveLoc,
+            m,
+            {
+                contextInfo: {
+                    externalAdReply: {
+                        mediaUrl: null,
+                        mediaType: 1,
+                        showAdAttribution: true,
+                        title: packname,  // Título personalizado
+                        body: wm,         // Texto de cuerpo personalizado
+                        previewType: 0,
+                        sourceUrl: channel // URL del canal
+                    }
+                }
+            }
+        );
 
         if (!isLimit) await conn.sendFile(m.chat, buffer, fileName, '', m, null, { mimetype, asDocument: true });
 

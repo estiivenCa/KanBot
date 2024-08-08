@@ -18,7 +18,24 @@ let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let isLimit = (isPrems || isOwner ? limit : limit) * 1012 < filesize
 
-await conn.reply(m.chat, `💌 *Nombre:* ${filename}\n📊 *Peso:*  ${filesizeH}\n🗂️ *Tipo:* ${ext}\n🗳️ *Subido:* ${aploud}\n*🧿 Enviando por favor espera...*\n> Mientras esperas sigueme en mi canal carck 😎\nhttps://whatsapp.com/channel/0029VakhAHc5fM5hgaQ8ed2N`, fliveLoc, m)
+await conn.reply(m.chat, 
+    `💌 *Nombre:* ${filename}\n📊 *Peso:* ${filesizeH}\n🗂️ *Tipo:* ${ext}\n🗳️ *Subido:* ${aploud}\n*🧿 Enviando, por favor espera...*\n> Mientras esperas, sígueme en mi canal crack 😎`,
+    fliveLoc,
+    m,
+    {
+        contextInfo: {
+            externalAdReply: {
+                mediaUrl: null,
+                mediaType: 1,
+                showAdAttribution: true,
+                title: packname,  // Título personalizado
+                body: wm,         // Texto de cuerpo personalizado
+                previewType: 0,
+                sourceUrl: channel // URL del canal
+            }
+        }
+    }
+);
     
 if(!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 m.react(done)
