@@ -24,6 +24,7 @@ import fg from 'api-dylux';
             }
         }
     }
+                          { quoted: m }
 );
  try { 
   conn.sendMessage(m.chat, { text: texto, mentions: [m.sender]}, {quoted: m})
