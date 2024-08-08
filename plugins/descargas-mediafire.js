@@ -20,7 +20,6 @@ let isLimit = (isPrems || isOwner ? limit : limit) * 1012 < filesize
 
 await conn.reply(m.chat, 
     `💌 *Nombre:* ${filename}\n📊 *Peso:* ${filesizeH}\n🗂️ *Tipo:* ${ext}\n🗳️ *Subido:* ${aploud}\n*🧿 Enviando, por favor espera...*\n> Mientras esperas, sígueme en mi canal crack 😎`,
-    fliveLoc,
     m,
     {
         contextInfo: {
