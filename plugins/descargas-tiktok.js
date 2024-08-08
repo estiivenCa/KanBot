@@ -27,22 +27,26 @@ import fg from 'api-dylux';
  try { 
   conn.sendMessage(m.chat, { text: texto, mentions: [m.sender]}, {quoted: m})
  await conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })     
+   await m.react('⏳');
  const dataF = await tiktok.v1(args[0]) 
  //let desc1 =  `*USUARIO:* ${dataF.nickname || 'Indefinido'}` 
  let desc1 =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
  await conn.sendMessage(m.chat, { video: { url: dataF.play }, caption: desc1 }, { quoted: m })   
+   await m.react('✅');
  } catch (e1) { 
  try { 
  const tTiktok = await tiktokdlF(args[0]) 
  //let desc2 = `🔗 *Url:* ${tTiktok.video}`     
  let desc2 =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
- await conn.sendMessage(m.chat, { video: { url: tTiktok.video }, caption: desc2 }, { quoted: m })       
+ await conn.sendMessage(m.chat, { video: { url: tTiktok.video }, caption: desc2 }, { quoted: m })    
+   await m.react('✅');
  } catch (e2) { 
  try { 
  let p = await fg.tiktok(args[0])  
  //let te = `*USUARIO:* ${p.author || 'Indefinido'}` 
  let te =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
  await conn.sendMessage(m.chat, { video: { url: p.nowm}, caption: te }, { quoted: m })   
+   await m.react('✅');
  } catch (e3) { 
  try {  
  const { author: { nickname }, video, description } = await tiktokdl(args[0]) 
@@ -50,7 +54,9 @@ import fg from 'api-dylux';
  //let cap = `*USUARIO:* ${nickname || 'Indefinido'}` 
  let cap =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
  await conn.sendMessage(m.chat, { video: { url: url}, caption: cap }, { quoted: m })   
+   await m.react('✅');
  } catch { 
+   await m.react('❌');
  throw `「👑」 _Vuelve a intentarlo_` 
  }}}}} 
  handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm|tt|ttnowm|tiktokaudio)$/i 
