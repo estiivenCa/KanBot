@@ -8,9 +8,10 @@ import fg from 'api-dylux';
  if (!text) throw `*「👑」*Use el comandó correctamente\n\n_Ejemplo : ${usedPrefix + command} https://vm.tiktok.com/kandndbwldnig/🍁_` 
  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `「👑」 *Uso correcto\n\n_Ejemplo : ${usedPrefix + command} https://vm.tiktok.com/nandlwmso/🍁` 
 /*  let texto = `_🍁 @${m.sender.split`@`[0]} Enviando Video, espere un momento...._` */
+     await m.react('⏳');
  await conn.sendMessage(m.chat, 
     { 
-        text: `_🍁 @${m.sender.split`@`[0]} Enviando Video, espere un momento...._`,
+        text: `_🍁 @${m.sender.split`@`[0]} Enviando Video, espere un momento....\n> Mientras esperas, sígueme en mi canal, crack 😎_`,
         contextInfo: {
             externalAdReply: {
                 mediaUrl: null,
@@ -27,7 +28,6 @@ import fg from 'api-dylux';
  try { 
   conn.sendMessage(m.chat, { text: texto, mentions: [m.sender]}, {quoted: m})
  await conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })     
-   await m.react('⏳');
  const dataF = await tiktok.v1(args[0]) 
  //let desc1 =  `*USUARIO:* ${dataF.nickname || 'Indefinido'}` 
  let desc1 =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
