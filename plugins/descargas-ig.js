@@ -9,7 +9,7 @@ body: wm,
 previewType: 0,
 sourceUrl: channel }}})
 let { dl_url } = await Scraper.igdl(args[0])
-await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Video De Instagram*` }, { quoted: fkontak})
+await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Video De Instagram by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*` }, { quoted: fkontak})
 } catch (e) {
   console.log(e)
   m.reply('🍁  Ocurrió un error inesperado.')
