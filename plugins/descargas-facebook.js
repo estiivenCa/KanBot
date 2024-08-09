@@ -44,7 +44,7 @@ let data = res.data.find(i => i.resolution === "720p (HD)") || res.data.find(i =
 if (!data) {}
 
 let video = data.url;
-await conn.sendFile(m.chat, video, 'facebook.mp4','✅️ *Su Video de Facebook by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*', null, m, null);
+await conn.sendFile(m.chat, video, 'facebook.mp4', null, m, null);
 await m.react('✅');
 } catch {
 console.log('error 1/2');
@@ -59,7 +59,7 @@ const data = await response.json();
 
 if (data?.status === true) {
 const videoBuffer = await getBuffer(data.resultado.data);
-await conn.sendFile(m.chat, videoBuffer, 'facebook.mp4', '✅️ *Su Video de Facebook by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*', null, m, null);
+await conn.sendFile(m.chat, videoBuffer, 'facebook.mp4', null, m, null);
 await m.react('✅');
 } else {}
 } catch {
