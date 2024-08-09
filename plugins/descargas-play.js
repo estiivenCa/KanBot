@@ -32,6 +32,8 @@ import fetch from 'node-fetch'
  ┃ *∘ 📎 𝙇𝙄𝙉𝙆* 
  ${yt_play[0].url} 
  ┃ *⌚ ENVIANDO ${additionalText}, POR FAVOR  ESPERE.*
+ 
+ ┃ _*by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*_
  ┗━━━━━━━━━━━━━━━━━━━━━`
 .trim() 
  await conn.sendMessage(m.chat, { 
@@ -136,8 +138,8 @@ import fetch from 'node-fetch'
  const dl_url = await yt.video[q].download() 
  const ttl = await yt.title 
  const size = await yt.video[q].fileSizeH 
- await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*: ${ttl}\n*📍 PESO:* ${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m }) 
  } catch {    
+ await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*: ${ttl}\n*📍 PESO:* ${size}\n_*by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*_`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m }) 
  try {   
  let mediaa = await ytMp4(yt_play[0].url) 
  await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_BaileyBot-MD_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })      
@@ -149,8 +151,8 @@ import fetch from 'node-fetch'
  let n2 = lolh.result.link 
  let n3 = lolh.result.size 
  let n4 = lolh.result.thumbnail 
- await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${n}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${n3}`, thumbnail: await fetch(n4) }, { quoted: m }) 
  } catch { 
+ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${n}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${n3}\n_*by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*_`, thumbnail: await fetch(n4) }, { quoted: m }) 
  await conn.reply(m.chat, '*⚠️ NO FUE POSIBLE DESCARGAR EL VÍDEO*', m, fake)}}}     
  }} catch { 
  throw "*⚠️ ERROR, INTENTALO DE NUEVO*"} 
