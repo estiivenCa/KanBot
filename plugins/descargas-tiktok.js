@@ -31,21 +31,21 @@ import fg from 'api-dylux';
  await conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })     
  const dataF = await tiktok.v1(args[0]) 
  //let desc1 =  `*USUARIO:* ${dataF.nickname || 'Indefinido'}` 
- let desc1 =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
+ let desc1 =  `🍁 *Su Video de Tiktok by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*` 
  await conn.sendMessage(m.chat, { video: { url: dataF.play }, caption: desc1 }, { quoted: m })   
    await m.react('✅');
  } catch (e1) { 
  try { 
  const tTiktok = await tiktokdlF(args[0]) 
  //let desc2 = `🔗 *Url:* ${tTiktok.video}`     
- let desc2 =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
+ let desc2 =   `🍁 *Su Video de Tiktok by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*` 
  await conn.sendMessage(m.chat, { video: { url: tTiktok.video }, caption: desc2 }, { quoted: m })    
    await m.react('✅');
  } catch (e2) { 
  try { 
  let p = await fg.tiktok(args[0])  
  //let te = `*USUARIO:* ${p.author || 'Indefinido'}` 
- let te =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
+ let te =  `🍁 *Su Video de Tiktok by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*` 
  await conn.sendMessage(m.chat, { video: { url: p.nowm}, caption: te }, { quoted: m })   
    await m.react('✅');
  } catch (e3) { 
@@ -53,7 +53,7 @@ import fg from 'api-dylux';
  const { author: { nickname }, video, description } = await tiktokdl(args[0]) 
  const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd 
  //let cap = `*USUARIO:* ${nickname || 'Indefinido'}` 
- let cap =  `_🍁 Tiktok sin marca de agua descargado con éxito_` 
+ let cap =   `🍁 *Su Video de Tiktok by ✰ 𝙺𝚊𝚗𝙱𝚘𝚝 ✰*`
  await conn.sendMessage(m.chat, { video: { url: url}, caption: cap }, { quoted: m })   
    await m.react('✅');
  } catch { 
